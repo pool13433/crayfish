@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/pool13433/crayfish#readme",
   "dependencies": {
-    "jquery": "^3.1.1"
+    "angular": "^1.5.8",
+    "bootstrap": "^4.0.0-alpha.4",
+    "jquery": "^2.2.4",
+    "lodash": "^4.16.6",
+    "ng-facebook": "^0.1.6"
   }
 }

@@ -1,20 +1,103 @@
-<?php
-/* @var $this SiteController */
+<?php $baseUrl = Yii::app()->baseUrl; ?>
+<div class="ui vertical segment">   
+    <div class="ui container">        
+        <h2 class="ui dividing header">
+            Crayfish Best
+        </h2>
+        <div class="ui five cards stackable">
+            <?php foreach ($crayfishs as $index => $cray) { ?>
+                <div class="ui card">
+                    <a class="image" href="#">
+                        <div class="ui red ribbon label">
+                            <i class="hotel icon"></i> Hotel
+                        </div>
+                        <img src="<?= $baseUrl ?>/images/crayfish-dummy.jpg">
+                    </a>
+                    <div class="content">
+                        <a class="header" href="#"><?= $cray['cray_name'] ?></a>
+                    </div>
+                    <div class="extra content">
+                        <span class="left floated like">
+                            <i class="money icon"></i>
+                            <?= $cray['cray_price'] ?>
+                        </span>
+                        <span class="right floated star">
+                            <i class="calendar icon"></i>
+                            <?= $cray['cray_date_create'] ?>
+                        </span>
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+    </div>
+</div>
 
-$this->pageTitle=Yii::app()->name;
-?>
+<div class="ui vertical segment">
+    <div class="ui container">        
+        <div class="ui stackable two column grid">
+            <div class="column">
+                <h2 class="ui dividing header">
+                    Crayfish Best
+                </h2>
+                <div class="ui three cards stackable">
+                    <?php foreach ($crayfishs as $index => $cray) { ?>
+                        <div class="ui card">
+                            <a class="image" href="#">
+                                <div class="ui blue ribbon label">
+                                    <i class="hotel icon"></i> Hotel
+                                </div>
+                                <img src="<?= $baseUrl ?>/images/crayfish-dummy.jpg">
+                            </a>
+                            <div class="content">
+                                <a class="header" href="#"><?= $cray['cray_name'] ?></a>
+                            </div>
+                            <div class="extra content">
+                                <span class="left floated like">
+                                    <i class="money icon"></i>
+                                    <?= $cray['cray_price'] ?>
+                                </span>
+                                <span class="right floated star">
+                                    <i class="calendar icon"></i>
+                                    <?= $cray['cray_date_create'] ?>
+                                </span>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+            </div>
+            <div class="column">
+                <h2 class="ui dividing header">
+                    Crayfish Best
+                </h2>
+                <div class="ui three cards stackable">
+                    <?php foreach ($crayfishs as $index => $cray) { ?>
+                        <div class="ui card">
+                            <a class="image" href="#">
+                                <div class="ui orange ribbon label">
+                                    <i class="hotel icon"></i> Hotel
+                                </div>
+                                <img src="<?= $baseUrl ?>/images/crayfish-dummy.jpg">
+                            </a>
+                            <div class="content">
+                                <a class="header" href="#"><?= $cray['cray_name'] ?></a>
+                            </div>
+                            <div class="extra content">
+                                <span class="left floated like">
+                                    <i class="money icon"></i>
+                                    <?= $cray['cray_price'] ?>
+                                </span>
+                                <span class="right floated star">
+                                    <i class="calendar icon"></i>
+                                    <?= $cray['cray_date_create'] ?>
+                                </span>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+            </div>
+        </div>
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
-
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+    </div>
+</div>
