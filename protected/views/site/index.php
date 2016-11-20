@@ -2,12 +2,12 @@
 <div class="ui vertical segment">   
     <div class="ui container">        
         <h2 class="ui dividing header">
-            Crayfish Best
+            สุดยอด Crayfish
         </h2>
         <div class="ui five cards stackable">
             <?php foreach ($crayfishs as $index => $cray) { ?>
                 <div class="ui card">
-                    <a class="image" href="#">
+                    <a class="image" href="<?=$baseUrl?>/site/doCrayFish/<?=$cray['cray_id']?>">
                         <div class="ui red ribbon label">
                             <i class="hotel icon"></i> Hotel
                         </div>
@@ -37,7 +37,7 @@
         <div class="ui stackable two column grid">
             <div class="column">
                 <h2 class="ui dividing header">
-                    Crayfish Best
+                    Crayfish Top 10
                 </h2>
                 <div class="ui three cards stackable">
                     <?php foreach ($crayfishs as $index => $cray) { ?>
@@ -68,7 +68,7 @@
             </div>
             <div class="column">
                 <h2 class="ui dividing header">
-                    Crayfish Best
+                    Crayfish มาใหม่
                 </h2>
                 <div class="ui three cards stackable">
                     <?php foreach ($crayfishs as $index => $cray) { ?>

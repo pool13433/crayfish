@@ -1,12 +1,13 @@
 // https://github.com/AlmogBaku/ngFacebook
 var app = angular.module('crayfishApp', ['ngFacebook'])
+        .constant('URL_SERVICE', CRAYFISH_URL)
         .config(['$facebookProvider', function ($facebookProvider) {
                 $facebookProvider
                         .setAppId('1820367104853133')
                         .setCustomInit({
                             channelUrl: 'http://localhost/crayfish/',
                             xfbml: true,
-                            version    : 'v2.8'
+                            version: 'v2.8'
                         });
             }])
         .run(['$rootScope', '$window', function ($rootScope, $window) {
@@ -34,7 +35,8 @@ var app = angular.module('crayfishApp', ['ngFacebook'])
                         onBottomPassedReverse: function () {
                             $('.fixed.menu').transition('fade out');
                         }
-                    })
+                    });
+                    $('.ui.dropdown').dropdown();
                     // create sidebar and attach to menu open
                     $('.ui.sidebar').sidebar('attach events', '.toc.item');
                 });

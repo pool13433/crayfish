@@ -17,6 +17,7 @@
                 font-family: superspace;
             }
         </style>
+        <script type="text/javascript"> var CRAYFISH_URL = '<?=$baseUrl?>'; </script>
     </head>
 
     <body>

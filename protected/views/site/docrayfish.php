@@ -1,14 +1,11 @@
 <?php $baseUrl = Yii::app()->baseUrl; ?>
-<?php $crayfishUrl = Yii::app()->getRequest()->getHostInfo() . $baseUrl . '/site/crayfish/' . $crayfish['cray_id']; ?>
-<div class="ui container" ng-controller="CrayfishController as vm">        
+<?php $crayfishUrl = Yii::app()->getRequest()->getHostInfo() . $baseUrl . '/site/doCrayFish/' . $crayfish['cray_id']; ?>
+<div class="ui container" ng-controller="DoCrayfishController as vm">        
     <div id="fb-root"></div>
-    <h5 class="ui top attached header">
-        Dogs  
-        <div class="fb-share-button" 
-             data-href="<?= $crayfishUrl ?>" data-layout="button_count" data-size="small" data-mobile-iframe="true">
-            <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">แชร์</a>
-        </div>
-    </h5>
+    <h3 class="ui top attached header">
+        <?= $crayfish['cray_name'] ?>
+        <div class="fb-like" data-href="<?= $crayfishUrl ?>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    </h3>
     <div class="ui attached segment">
         <div class="ui grid">
             <div class="five wide column">
@@ -54,9 +51,9 @@
             </div>
         </div>
     </div>   
-    <h5 class="ui attached header">
+    <h3 class="ui attached header">
         แสดงความคิดเห็น
-    </h5>
+    </h3>
     <div class="ui attached segment">
         <div class="fb-comments" data-href="<?= $crayfishUrl ?>" data-numposts="10" data-width="100%" ></div>
     </div>
