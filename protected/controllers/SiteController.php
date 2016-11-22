@@ -29,6 +29,10 @@ class SiteController extends Controller {
     public function actionSalesCrayfish(){
         $this->render('/site/sales-crayfish',array());
     }
+
+    public function actionRegister(){
+        $this->render('/site/register',array());
+    }
     
     public function actionSalesAccessories(){
          $type = Yii::app()->db->createCommand()

@@ -14,10 +14,10 @@
             </div>
         </div>
         <a class="item">ติดต่อเรา</a>
-        <a class="item">ลงโฆษณากับเรา</a>
+        <a class="item">ลงโฆษณากับเราสิครับบบบบ</a>
         <div class="right item">
             <a class="ui inverted button">Log in1</a>
-            <a class="ui inverted button">Sign Up</a>
+            <a class="ui inverted button" href="<?= $baseUrl ?>/site/register">Sign Up</a>
         </div>
     </div>
 </div>
@@ -37,9 +37,9 @@
         </div>
     </div>
     <a class="item">ติดต่อเรา</a>
-    <a class="item">ลงโฆษณากับเรา</a>
+    <a class="item">ลงโฆษณากับเราาาาาาาาาาาาาาาาาาา</a>
     <a class="item">Login</a>
-    <a class="item">Signup</a>
+    <a class="item" href="<?= $baseUrl ?>/site/register">Signup</a>
 </div>
 
 <div class="ui inverted vertical masthead center aligned segment">
@@ -61,10 +61,10 @@
                 </div>
             </div>
             <a class="item">ติดต่อเรา</a>
-            <a class="item">ลงโฆษณากับเรา</a>
+            <a class="item">ลงโฆษณากับเราอิอิ</a>
             <div class="right item">
                 <a class="ui inverted button">Log in1</a>
-                <a class="ui inverted button">Sign Up</a>
+                <a class="ui inverted button" href="<?= $baseUrl ?>/site/register">Sign Up</a>
             </div>
         </div>
     </div>
