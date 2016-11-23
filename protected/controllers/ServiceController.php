@@ -110,7 +110,6 @@ class ServiceController extends Controller {
 
     public function actionPostCrayfish() {
         if (!empty($_POST)) {
-
             $crayfish = new Crayfish();
             $crayfish->cray_age = $_POST['age'];
             $crayfish->cray_code = $_POST['code'];
@@ -119,11 +118,39 @@ class ServiceController extends Controller {
             $crayfish->cray_date_tran = new CDbExpression('NOW()');
             $crayfish->cray_desc = $_POST['desc'];
             $crayfish->cray_name = $_POST['name'];
-            $crayfish->cray_picture = 'xxx'; //$_POST['picture'];
+
             $crayfish->cray_price = $_POST['price'];
             $crayfish->cray_status = 'active';
             $crayfish->mem_id = 1;
+
+            // Uplaod File 
+            $renamePIC = 'xxxxxx';
+            $crayfishPictures = array();
+            $output_dir = Yii::getPathOfAlias('webroot') . '/uploads/crayfishs/';
+            if (isset($_FILES["myfile"])) {
+                $ret = array();
+                $error = $_FILES["myfile"]["error"];
+
+                $fileCount = count($_FILES["myfile"]["name"]);
+                for ($i = 0; $i < $fileCount; $i++) {
+                    $originPIC = $_FILES["myfile"]["name"][$i];
+                    $extPIC = pathinfo($originPIC, PATHINFO_EXTENSION);
+                    $renamePIC = date('Ymd_His') . '_' . $i . '.' . $extPIC;
+                    move_uploaded_file($_FILES["myfile"]["tmp_name"][$i], $output_dir . $renamePIC);
+
+                    $crayfishPictures[] = $renamePIC;
+                    if ($i == 0) {
+                        $crayfish->cray_picture = $renamePIC;
+                    }
+                }
+            }
             if ($crayfish->save()) {
+                foreach ($crayfishPictures as $index => $image) {
+                    $picture = new CrayfishPicture();
+                    $picture->cray_id = $crayfish->cray_id;
+                    $picture->pic_name = $image;
+                    $picture->save();
+                }
                 $status = array('status' => true, 'title' => 'สถานะการลงประกาศ', 'message' => 'ลงประกาศ สำเร็จ', 'redirect' => Yii::app()->baseUrl . '/site/crayfishs');
             } else {
                 $status = array('status' => false, 'title' => 'สถานะการลงประกาศ', 'message' => 'ลงประกาศ ล้มเหลว');

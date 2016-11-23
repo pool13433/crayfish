@@ -32,8 +32,9 @@ class Controller extends CController {
             $cs->registerCssFile($baseUrl . '/plugins/semantic-ui-css/semantic.css');               
             $cs->registerCssFile($baseUrl . '/plugins/owl-carousel-1.3.3/owl.carousel.min.css');
             $cs->registerCssFile($baseUrl . '/plugins/owl-carousel-1.3.3/owl.theme.min.css');
-            $cs->registerCssFile($baseUrl . '/plugins/owl-carousel-1.3.3/owl.transitions.min.css');
-
+            $cs->registerCssFile($baseUrl . '/plugins/owl-carousel-1.3.3/owl.transitions.min.css');         
+            $cs->registerCssFile($baseUrl . '/node_modules/dropzone/dist/dropzone.css');            
+            
 
             $cs->registerScriptFile($baseUrl . '/node_modules/jquery/dist/jquery.min.js', CClientScript::POS_END);            
             $cs->registerScriptFile($baseUrl . '/node_modules/angular/angular.min.js', CClientScript::POS_END);            
@@ -42,6 +43,7 @@ class Controller extends CController {
             $cs->registerScriptFile($baseUrl . '/plugins/owl-carousel-1.3.3/owl.carousel.min.js', CClientScript::POS_END);
             $cs->registerScriptFile($baseUrl . '/node_modules/lodash/lodash.min.js', CClientScript::POS_END);
             $cs->registerScriptFile($baseUrl . '/node_modules/ng-facebook/ngFacebook.js', CClientScript::POS_END);
+            $cs->registerScriptFile($baseUrl . '/node_modules/dropzone/dist/dropzone.js', CClientScript::POS_END);
             
             $cs->registerScriptFile($baseUrl . '/js/app.js', CClientScript::POS_END);
             $cs->registerScriptFile($baseUrl . '/js/app.factory.js', CClientScript::POS_END);

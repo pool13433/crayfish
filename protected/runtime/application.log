@@ -1661,3 +1661,662 @@ Stack trace:
 REQUEST_URI=/crayfish/site/register
 HTTP_REFERER=http://localhost/crayfish/site/crayfishs
 ---
+2016/11/23 14:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{"name":"","type":""}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{"name":"","typ...')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{"name":"","typ...')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{"name":""...')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%22name%22:%22%22,%22type%22:%22%22%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:34:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:34:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:34:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{"name":"","type":""}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{"name":"","typ...')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{"name":"","typ...')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{"name":""...')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%22name%22:%22%22,%22type%22:%22%22%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:35:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:35:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:35:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{"name":"","type":""}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{"name":"","typ...')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{"name":"","typ...')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{"name":""...')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%22name%22:%22%22,%22type%22:%22%22%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:36:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:36:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:36:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{"name":"","type":""}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{"name":"","typ...')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{"name":"","typ...')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{"name":""...')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%22name%22:%22%22,%22type%22:%22%22%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{"name":"","type":""}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{"name":"","typ...')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{"name":"","typ...')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{"name":""...')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%22name%22:%22%22,%22type%22:%22%22%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:39:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:39:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:39:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{"name":"","type":""}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{"name":"","typ...')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{"name":"","typ...')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{"name":""...')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%22name%22:%22%22,%22type%22:%22%22%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:40:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{"name":"","type":""}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{"name":"","typ...')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{"name":"","typ...')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{"name":""...')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%22name%22:%22%22,%22type%22:%22%22%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:41:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:42:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:42:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:42:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:42:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:42:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:42:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:43:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{image}}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{{image}}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{{image}}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{{image}}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7Bimage%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:43:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{}".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('{}')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('{}')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{}')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/%7B%7D
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:52:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "plugins/uploadify/jquery.uploadify.min".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('plugins/uploadi...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/plugins/uploadify/jquery.uploadify.min
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:52:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "plugins/uploadify/jquery.uploadify.min".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('plugins/uploadi...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/plugins/uploadify/jquery.uploadify.min
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:52:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "plugins/uploadify/jquery.uploadify.min".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('plugins/uploadi...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/plugins/uploadify/jquery.uploadify.min
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 14:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "plugins/uploadify/jquery.uploadify.min".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('plugins/uploadi...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/plugins/uploadify/jquery.uploadify.min
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 15:23:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload.php".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('upload.php')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('upload.php')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/upload.php')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/upload.php
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 15:23:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload.php".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('upload.php')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('upload.php')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/upload.php')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/upload.php
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 15:37:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload.php".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('upload.php')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('upload.php')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/upload.php')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/upload.php
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 15:41:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload.php".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('upload.php')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('upload.php')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/upload.php')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/upload.php
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 15:43:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload.php".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('upload.php')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('upload.php')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/upload.php')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/upload.php
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 15:46:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload.php".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('upload.php')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('upload.php')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/upload.php')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/upload.php
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 16:32:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "plugins/jquery-upload-file/css/uploadfile.custom.css".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('plugins/jquery-...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/plugins/jquery-upload-file/css/uploadfile.custom.css
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 16:33:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "plugins/jquery-upload-file/css/uploadfile.custom.css".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('plugins/jquery-...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/plugins/jquery-upload-file/css/uploadfile.custom.css
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 16:38:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "some_target_url".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('some_target_url')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('some_target_url')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/some_targe...')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/some_target_url
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 16:39:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "some_target_url".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('some_target_url')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('some_target_url')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/some_targe...')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/some_target_url
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 16:39:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "some_target_url".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('some_target_url')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('some_target_url')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/some_targe...')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/some_target_url
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---
+2016/11/23 16:39:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "some_target_url".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('some_target_url')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('some_target_url')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/some_targe...')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/some_target_url
+HTTP_REFERER=http://localhost/crayfish/site/salesCrayfish
+---

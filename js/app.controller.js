@@ -19,7 +19,7 @@ function SalesAccessoriesController(CrayfishService, $timeout, $log, $window) {
                     ]},
                 name: {identifier: 'name', rules: [{type: 'empty', prompt: 'กรุณากรอกข้อมูล ชื่อ'}]},
                 price: {identifier: 'price', rules: [{type: 'empty', prompt: 'กรุณากรอกข้อมูล ราคา'}, {type: 'number', prompt: 'กรุณากรอกข้อมูล ราคา เป็นตัวเลขเท่านั้น'}]},
-                type: {identifier: 'type', rules: [{type: 'empty', prompt: 'กรุณาเลือกข้อมูล ประเภท'}]},                
+                type: {identifier: 'type', rules: [{type: 'empty', prompt: 'กรุณาเลือกข้อมูล ประเภท'}]},
                 desc: {identifier: 'desc', rules: [{type: 'empty', prompt: 'กรุณากรอกข้อมูล รายละเอียด'}]},
             },
             onSuccess: function (event, fields) {
@@ -38,11 +38,16 @@ function SalesAccessoriesController(CrayfishService, $timeout, $log, $window) {
     }
 }
 
-function SalesCrayFishController(CrayfishService, $timeout, $log, $window) {
+function SalesCrayFishController(CrayfishService, URL_SERVICE, $timeout, $log, $window) {
+    var vm = this;
+    this.imageList = [];
+    this.crayfish = {};
+    this.uploadFile = {};
 
     $timeout(function () {
         init();
-    }, 0);
+        myDropzone();
+    }, 1000);
 
     function init() {
         $('form[name="form-crayfish"]').form({
@@ -61,17 +66,34 @@ function SalesCrayFishController(CrayfishService, $timeout, $log, $window) {
             },
             onSuccess: function (event, fields) {
                 event.preventDefault();
-                CrayfishService.postCrayfish(fields).then(function success(response) {
-                    console.log('response ::==', response);
-                    $window.alert('title :: ' + response.title + '\n message :: ' + response.message);
-                    if (response.status) {
-                        $window.location = response.redirect;
-                    }
-                }, function fail(e) {
-                    $log.error(e);
-                });
+//                CrayfishService.postCrayfish(fields).then(function success(response) {
+//                    console.log('response ::==', response);
+//                    $window.alert('title :: ' + response.title + '\n message :: ' + response.message);
+//                    if (response.status) {
+//                        $window.location = response.redirect;
+//                    }
+//                }, function fail(e) {
+//                    $log.error(e);
+//                });
+
+
             }
         });
+    }
+
+    function myDropzone() {
+        $(document).ready(function () {
+            Dropzone.autoDiscover = false;
+            Dropzone.options.myAwesomeDropzone = {// The camelized version of the ID of the form element
+                // The configuration we've talked about above
+                url: "/file/post",
+                previewsContainer: ".dropzone-previews",
+                uploadMultiple: true,
+                parallelUploads: 100,
+                maxFiles: 100
+            }
+        });
+
     }
 
 }
