@@ -32,6 +32,7 @@ class ServiceController extends Controller {
         if (!empty($_POST['color']) && $_POST['color'] !== $this->default) {
             $command->andWhere('c.cray_color =:color', array(':color' => $_POST['color']));
         }
+        $command->order('c.cray_id DESC');
         $crayfishs = $command->queryAll();
         echo CJSON::encode($crayfishs);
     }

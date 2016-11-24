@@ -11,7 +11,7 @@
                         <div class="ui red ribbon label">
                             <i class="hotel icon"></i> Hotel
                         </div>
-                        <img src="<?= $baseUrl ?>/images/crayfish-dummy.jpg">
+                        <img src="<?= $baseUrl ?>/uploads/crayfishs/<?=$cray['cray_picture']?>">
                     </a>
                     <div class="content">
                         <a class="header" href="#"><?= $cray['cray_name'] ?></a>
@@ -45,8 +45,8 @@
                             <a class="image" href="#">
                                 <div class="ui blue ribbon label">
                                     <i class="hotel icon"></i> Hotel
-                                </div>
-                                <img src="<?= $baseUrl ?>/images/crayfish-dummy.jpg">
+                                </div>                                
+                                <img src="<?= $baseUrl ?>/uploads/crayfishs/<?=$cray['cray_picture']?>">
                             </a>
                             <div class="content">
                                 <a class="header" href="#"><?= $cray['cray_name'] ?></a>
@@ -74,10 +74,10 @@
                     <?php foreach ($crayfishs as $index => $cray) { ?>
                         <div class="ui card">
                             <a class="image" href="#">
-                                <div class="ui orange ribbon label">
+                                <div class="ui pink ribbon label">
                                     <i class="hotel icon"></i> Hotel
                                 </div>
-                                <img src="<?= $baseUrl ?>/images/crayfish-dummy.jpg">
+                                <img src="<?= $baseUrl ?>/uploads/crayfishs/<?=$cray['cray_picture']?>">
                             </a>
                             <div class="content">
                                 <a class="header" href="#"><?= $cray['cray_name'] ?></a>

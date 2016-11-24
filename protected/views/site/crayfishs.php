@@ -60,7 +60,7 @@
 
                     <div class="ui card" ng-repeat="crayfish in vm.crayfishList">
                         <a class="image" href="<?= $baseUrl ?>/site/doCrayFish/{{crayfish.cray_id}}">
-                            <img src="<?= $baseUrl ?>/images/crayfish-dummy.jpg">
+                            <img src="<?= $baseUrl ?>/uploads/crayfishs/{{crayfish.cray_picture}}">
                         </a>
                         <div class="content">
                             <a class="header" href="#">{{crayfish.cray_name}}</a>

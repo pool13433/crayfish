@@ -44,7 +44,7 @@
 
                     <div class="ui card" ng-repeat="accesory in vm.accessoryList">
                         <a class="image" href="<?= $baseUrl ?>/site/doAccesories/{{accesory.acc_id}}">
-                            <img src="<?= $baseUrl ?>/images/crayfish-dummy.jpg">
+                            <img src="<?= $baseUrl ?>/uploads/accessory/{{accesory.acc_picture}}">
                         </a>
                         <div class="content">
                             <a class="header" href="#">{{accesory.acc_name}}</a>
