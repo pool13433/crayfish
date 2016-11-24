@@ -1,5 +1,5 @@
 // https://github.com/AlmogBaku/ngFacebook
-var app = angular.module('crayfishApp', ['ngFacebook'])
+var app = angular.module('crayfishApp', ['ngFacebook','thatisuday.dropzone'])
         .constant('URL_SERVICE', CRAYFISH_URL)
         .config(['$facebookProvider', function ($facebookProvider) {
                 $facebookProvider
@@ -26,6 +26,7 @@ var app = angular.module('crayfishApp', ['ngFacebook'])
                 });
 
                 $(document).ready(function () {
+                    
                     // fix menu when passed
                     $('.masthead').visibility({
                         once: false,

@@ -3,97 +3,122 @@ app.controller('DoCrayfishController', DoCrayfishController)
         .controller('AccessoriesController', AccessoriesController)
         .controller('SalesCrayFishController', SalesCrayFishController)
         .controller('SalesAccessoriesController', SalesAccessoriesController);
-function SalesAccessoriesController(CrayfishService, $timeout, $log, $window) {
-    $timeout(function () {
-        init();
-    }, 0);
-
-    function init() {
-        $('form[name="form-accessories"]').form({
-            on: 'blur',
-            inline: true,
-            fields: {
-                code: {identifier: 'code', rules: [
-                        {type: 'empty', prompt: 'กรุณากรอกข้อมูล รหัส'},
-                        {type: 'maxLength[20]', prompt: 'กรุณากรอกข้อมูล ไม่เกิน 20 ตัวอักษร'}
-                    ]},
-                name: {identifier: 'name', rules: [{type: 'empty', prompt: 'กรุณากรอกข้อมูล ชื่อ'}]},
-                price: {identifier: 'price', rules: [{type: 'empty', prompt: 'กรุณากรอกข้อมูล ราคา'}, {type: 'number', prompt: 'กรุณากรอกข้อมูล ราคา เป็นตัวเลขเท่านั้น'}]},
-                type: {identifier: 'type', rules: [{type: 'empty', prompt: 'กรุณาเลือกข้อมูล ประเภท'}]},
-                desc: {identifier: 'desc', rules: [{type: 'empty', prompt: 'กรุณากรอกข้อมูล รายละเอียด'}]},
-            },
-            onSuccess: function (event, fields) {
-                event.preventDefault();
-                CrayfishService.postAccessories(fields).then(function success(response) {
-                    console.log('response ::==', response);
-                    $window.alert('title :: ' + response.title + '\n message :: ' + response.message);
-                    if (response.status) {
-                        $window.location = response.redirect;
-                    }
-                }, function fail(e) {
-                    $log.error(e);
-                });
+function SalesAccessoriesController(CrayfishService, $timeout, $log, $window,$scope,URL_SERVICE) {
+        var vm  = this;
+    // ********************** dropzone ***************
+    //https://github.com/thatisuday/ng-dropzone
+    $scope.dzOptions = {
+        url: URL_SERVICE + '/service/PostAccessories',
+        paramName: 'myfile',
+        autoProcessQueue: false,
+        maxFilesize: '10',
+        uploadMultiple: true, // Adding This 
+        acceptedFiles: 'image/jpeg, images/jpg, image/png',
+        addRemoveLinks: true
+    };
+    //Handle events for dropzone
+    //Visit http://www.dropzonejs.com/#events for more events
+    $scope.dzCallbacks = {
+        'addedfile': function (file) {
+            console.log(file);
+            $scope.newFile = file;
+            vm.uploadSize++;
+        },
+        removedfile: function (file) {
+            vm.uploadSize--;
+        },
+        'success': function (file, response) {
+            var data = eval("(" + response + ')');
+            console.log('response ::==', data);
+            if (data.status) {
+                $window.location.href = data.redirect;
+            } else {
+                $window.alert(data.message);
             }
-        });
+        },
+        sending: function (file, xhr, data) {
+            data.append("code", vm.accessories.code);
+            data.append("name", vm.accessories.name);
+            data.append("price", vm.accessories.price);
+            data.append("type", vm.accessories.type);
+            data.append("desc", vm.accessories.desc);
+        }
+    };
+
+    //Apply methods for dropzone
+    //Visit http://www.dropzonejs.com/#dropzone-methods for more methods
+    $scope.dzMethods = {};
+    $scope.removeNewFile = function () {
+        $scope.dzMethods.removeFile($scope.newFile); //We got $scope.newFile from 'addedfile' event callback
+    }
+
+
+    // ********************** dropzone ***************
+    this.crayfishSubmit = function () {
+        $scope.dzMethods.processQueue();
     }
 }
 
-function SalesCrayFishController(CrayfishService, URL_SERVICE, $timeout, $log, $window) {
+function SalesCrayFishController(CrayfishService, URL_SERVICE, $timeout, $log, $window, $scope) {
+    Dropzone.autoDiscover = false;
     var vm = this;
     this.imageList = [];
     this.crayfish = {};
     this.uploadFile = {};
+    this.uploadSize = [];
 
-    $timeout(function () {
-        init();
-        myDropzone();
-    }, 1000);
-
-    function init() {
-        $('form[name="form-crayfish"]').form({
-            on: 'blur',
-            inline: true,
-            fields: {
-                code: {identifier: 'code', rules: [
-                        {type: 'empty', prompt: 'กรุณากรอกข้อมูล รหัส'},
-                        {type: 'maxLength[20]', prompt: 'กรุณากรอกข้อมูล ไม่เกิน 20 ตัวอักษร'}
-                    ]},
-                name: {identifier: 'name', rules: [{type: 'empty', prompt: 'กรุณากรอกข้อมูล ชื่อ'}]},
-                price: {identifier: 'price', rules: [{type: 'empty', prompt: 'กรุณากรอกข้อมูล ราคา'}, {type: 'number', prompt: 'กรุณากรอกข้อมูล ราคา เป็นตัวเลขเท่านั้น'}]},
-                color: {identifier: 'color', rules: [{type: 'empty', prompt: 'กรุณากรอกข้อมูล สี'}]},
-                age: {identifier: 'age', rules: [{type: 'empty', prompt: 'กรุณากรอกข้อมูล อายุ'}, {type: 'number', prompt: 'กรุณากรอกข้อมูล อายุ เป็นตัวเลขเท่านั้น'}]},
-                desc: {identifier: 'desc', rules: [{type: 'empty', prompt: 'กรุณากรอกข้อมูล รายละเอียด'}]},
-            },
-            onSuccess: function (event, fields) {
-                event.preventDefault();
-//                CrayfishService.postCrayfish(fields).then(function success(response) {
-//                    console.log('response ::==', response);
-//                    $window.alert('title :: ' + response.title + '\n message :: ' + response.message);
-//                    if (response.status) {
-//                        $window.location = response.redirect;
-//                    }
-//                }, function fail(e) {
-//                    $log.error(e);
-//                });
-
-
+    // ********************** dropzone ***************
+    //https://github.com/thatisuday/ng-dropzone
+    $scope.dzOptions = {
+        url: URL_SERVICE + '/service/PostCrayfish',
+        paramName: 'myfile',
+        autoProcessQueue: false,
+        maxFilesize: '10',
+        uploadMultiple: true, // Adding This 
+        acceptedFiles: 'image/jpeg, images/jpg, image/png',
+        addRemoveLinks: true
+    };
+    //Handle events for dropzone
+    //Visit http://www.dropzonejs.com/#events for more events
+    $scope.dzCallbacks = {
+        'addedfile': function (file) {
+            console.log(file);
+            $scope.newFile = file;
+            vm.uploadSize++;
+        },
+        removedfile: function (file) {
+            vm.uploadSize--;
+        },
+        'success': function (file, response) {
+            var data = eval("(" + response + ')');
+            console.log('response ::==', data);
+            if (data.status) {
+                $window.location.href = data.redirect;
+            } else {
+                $window.alert(data.message);
             }
-        });
+        },
+        sending: function (file, xhr, data) {
+            data.append("code", vm.crayfish.code);
+            data.append("name", vm.crayfish.name);
+            data.append("price", vm.crayfish.price);
+            data.append("color", vm.crayfish.color);
+            data.append("age", vm.crayfish.age);
+            data.append("desc", vm.crayfish.desc);
+        }
+    };
+
+    //Apply methods for dropzone
+    //Visit http://www.dropzonejs.com/#dropzone-methods for more methods
+    $scope.dzMethods = {};
+    $scope.removeNewFile = function () {
+        $scope.dzMethods.removeFile($scope.newFile); //We got $scope.newFile from 'addedfile' event callback
     }
 
-    function myDropzone() {
-        $(document).ready(function () {
-            Dropzone.autoDiscover = false;
-            Dropzone.options.myAwesomeDropzone = {// The camelized version of the ID of the form element
-                // The configuration we've talked about above
-                url: "/file/post",
-                previewsContainer: ".dropzone-previews",
-                uploadMultiple: true,
-                parallelUploads: 100,
-                maxFiles: 100
-            }
-        });
 
+    // ********************** dropzone ***************
+    this.crayfishSubmit = function () {
+        $scope.dzMethods.processQueue();
     }
 
 }

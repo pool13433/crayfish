@@ -134,7 +134,7 @@ class ServiceController extends Controller {
                 $fileCount = count($_FILES["myfile"]["name"]);
                 for ($i = 0; $i < $fileCount; $i++) {
                     $originPIC = $_FILES["myfile"]["name"][$i];
-                    $extPIC = pathinfo($originPIC, PATHINFO_EXTENSION);
+                    $extPIC = pathinfo($originPIC, PATHINFO_EXTENSION);                    
                     $renamePIC = date('Ymd_His') . '_' . $i . '.' . $extPIC;
                     move_uploaded_file($_FILES["myfile"]["tmp_name"][$i], $output_dir . $renamePIC);
 
@@ -166,12 +166,43 @@ class ServiceController extends Controller {
             $accessory->acc_date_update = new CDbExpression('NOW()');
             $accessory->acc_desc = $_POST['desc'];
             $accessory->acc_name = $_POST['name'];
-            $accessory->acc_picture = 'xxxxx';
+            
             $accessory->acc_price = $_POST['price'];
             $accessory->acc_status = 'active';
             $accessory->type_id = $_POST['type'];
             $accessory->mem_id = 1;
+            
+            
+            // Uplaod File 
+            $renamePIC = 'xxxxxx';
+            $crayfishPictures = array();
+            $output_dir = Yii::getPathOfAlias('webroot') . '/uploads/accessory/';
+            if (isset($_FILES["myfile"])) {
+                $ret = array();
+                $error = $_FILES["myfile"]["error"];
+                $fileCount = count($_FILES["myfile"]["name"]);
+                for ($i = 0; $i < $fileCount; $i++) {
+                    $originPIC = $_FILES["myfile"]["name"][$i];
+                    $extPIC = pathinfo($originPIC, PATHINFO_EXTENSION);                    
+                    $renamePIC = date('Ymd_His') . '_' . $i . '.' . $extPIC;
+                    move_uploaded_file($_FILES["myfile"]["tmp_name"][$i], $output_dir . $renamePIC);
+
+                    $crayfishPictures[] = $renamePIC;
+                    if ($i == 0) {
+                        $accessory->acc_picture = $renamePIC;
+                    }
+                }
+            }
+            
             if ($accessory->save()) {
+                
+                 foreach ($crayfishPictures as $index => $image) {
+                    $picture = new AccessoriesPicture();
+                    $picture->acc_id = $accessory->acc_id;
+                    $picture->pic_name = $image;
+                    $picture->save();
+                }
+                
                 $status = array('status' => true, 'title' => 'สถานะการลงประกาศ', 'message' => 'ลงประกาศ สำเร็จ', 'redirect' => Yii::app()->baseUrl . '/site/accessories');
             } else {
                 $status = array('status' => false, 'title' => 'สถานะการลงประกาศ', 'message' => 'ลงประกาศ ล้มเหลว');
