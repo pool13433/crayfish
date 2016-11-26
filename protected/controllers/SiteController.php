@@ -1,8 +1,8 @@
 <?php
 
 class SiteController extends Controller {
-    
-     public $default = '-- ทั้งหมด --';
+
+    public $default = '-- ทั้งหมด --';
 
     public function actionIndex() {
         $crayfishs = Yii::app()->db->createCommand()
@@ -17,31 +17,35 @@ class SiteController extends Controller {
     }
 
     public function actionCrayfishs() {
-        
-        $this->render('/site/crayfishs', array(                        
+
+        $this->render('/site/crayfishs', array(
         ));
     }
-    
-    public function actionAccessories(){
-        $this->render('/site/accessories',array());
+
+    public function actionAccessories() {
+        $this->render('/site/accessories', array());
     }
     
-    public function actionSalesCrayfish(){
-        $this->render('/site/sales-crayfish',array());
+    public function actionLocation() {
+        $this->render('/site/location', array());
     }
 
-    public function actionRegister(){
-        $this->render('/site/register',array());
+    public function actionSalesCrayfish() {
+        $this->render('/site/sales-crayfish', array());
     }
-    
-    public function actionSalesAccessories(){
-         $type = Yii::app()->db->createCommand()
+
+    public function actionRegister() {
+        $this->render('/site/register', array());
+    }
+
+    public function actionSalesAccessories() {
+        $type = Yii::app()->db->createCommand()
                 ->select('t.*')
                 ->from('accessories_type t')
                 ->queryAll();
-         array_unshift($type, array('type_id' => '', 'type_name' => $this->default));
-         
-        $this->render('/site/sales-accessories',array('type' => $type));
+        array_unshift($type, array('type_id' => '', 'type_name' => $this->default));
+
+        $this->render('/site/sales-accessories', array('type' => $type));
     }
 
     public function actionDoCrayFish($id) {
@@ -51,14 +55,14 @@ class SiteController extends Controller {
                         DATE_FORMAT(cray_date_tran,\'%d-%m-%Y\') as cray_date_tran
                         ')
                 ->from('crayfish c')
-                ->where('c.cray_id =:id', array(':id' => $id))                
+                ->where('c.cray_id =:id', array(':id' => $id))
                 ->queryRow();
         $this->render('/site/docrayfish', array(
             'crayfish' => $crayfish
         ));
     }
-    
-    public function actionDoAccesories($id){
+
+    public function actionDoAccesories($id) {
         
     }
 

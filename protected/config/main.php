@@ -66,5 +66,6 @@ return array(
     'params' => array(
         // this is used in contact page
         'adminEmail' => 'webmaster@example.com',
+        'API_KEY' => 'AIzaSyAqzvkR7n-1Q3FP9vqapihoq_k44bxMG74'
     ),
 );

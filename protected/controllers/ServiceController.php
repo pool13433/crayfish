@@ -135,7 +135,7 @@ class ServiceController extends Controller {
                 $fileCount = count($_FILES["myfile"]["name"]);
                 for ($i = 0; $i < $fileCount; $i++) {
                     $originPIC = $_FILES["myfile"]["name"][$i];
-                    $extPIC = pathinfo($originPIC, PATHINFO_EXTENSION);                    
+                    $extPIC = pathinfo($originPIC, PATHINFO_EXTENSION);
                     $renamePIC = date('Ymd_His') . '_' . $i . '.' . $extPIC;
                     move_uploaded_file($_FILES["myfile"]["tmp_name"][$i], $output_dir . $renamePIC);
 
@@ -167,13 +167,13 @@ class ServiceController extends Controller {
             $accessory->acc_date_update = new CDbExpression('NOW()');
             $accessory->acc_desc = $_POST['desc'];
             $accessory->acc_name = $_POST['name'];
-            
+
             $accessory->acc_price = $_POST['price'];
             $accessory->acc_status = 'active';
             $accessory->type_id = $_POST['type'];
             $accessory->mem_id = 1;
-            
-            
+
+
             // Uplaod File 
             $renamePIC = 'xxxxxx';
             $crayfishPictures = array();
@@ -184,7 +184,7 @@ class ServiceController extends Controller {
                 $fileCount = count($_FILES["myfile"]["name"]);
                 for ($i = 0; $i < $fileCount; $i++) {
                     $originPIC = $_FILES["myfile"]["name"][$i];
-                    $extPIC = pathinfo($originPIC, PATHINFO_EXTENSION);                    
+                    $extPIC = pathinfo($originPIC, PATHINFO_EXTENSION);
                     $renamePIC = date('Ymd_His') . '_' . $i . '.' . $extPIC;
                     move_uploaded_file($_FILES["myfile"]["tmp_name"][$i], $output_dir . $renamePIC);
 
@@ -194,22 +194,45 @@ class ServiceController extends Controller {
                     }
                 }
             }
-            
+
             if ($accessory->save()) {
-                
-                 foreach ($crayfishPictures as $index => $image) {
+
+                foreach ($crayfishPictures as $index => $image) {
                     $picture = new AccessoriesPicture();
                     $picture->acc_id = $accessory->acc_id;
                     $picture->pic_name = $image;
                     $picture->save();
                 }
-                
+
                 $status = array('status' => true, 'title' => 'สถานะการลงประกาศ', 'message' => 'ลงประกาศ สำเร็จ', 'redirect' => Yii::app()->baseUrl . '/site/accessories');
             } else {
                 $status = array('status' => false, 'title' => 'สถานะการลงประกาศ', 'message' => 'ลงประกาศ ล้มเหลว');
             }
             echo CJSON::encode($status);
         }
+    }
+
+    public function actionGetMarketPlaceLocation() {
+        $places = Yii::app()->db->createCommand()
+                ->select('cp.*,p.*')
+                ->from('crayfish_place cp ')
+                ->join('province p', 'p.pro_id = cp.pro_id')
+                ->where('cp.pla_status = \'active\' ')
+                ->order('cp.pla_id')
+                ->queryAll();
+        echo CJSON::encode($places);
+    }
+    
+    public function actionGetProvinceMinPlace(){
+        $provinces = Yii::app()->db->createCommand()
+                ->select('p.*,count(cp.pla_id) as cnt_place')
+                ->from('province p')
+                ->join('crayfish_place cp', 'cp.pro_id = p.pro_id')
+                ->where('cp.pla_status = \'active\' ')
+                ->group('p.pro_id')
+                ->having('count(cp.pro_id)  > 0')
+                ->queryAll();
+        echo CJSON::encode($provinces);
     }
 
 }

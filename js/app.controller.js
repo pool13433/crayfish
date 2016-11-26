@@ -2,9 +2,117 @@ app.controller('DoCrayfishController', DoCrayfishController)
         .controller('CrayfishsController', CrayfishsController)
         .controller('AccessoriesController', AccessoriesController)
         .controller('SalesCrayFishController', SalesCrayFishController)
-        .controller('SalesAccessoriesController', SalesAccessoriesController);
-function SalesAccessoriesController(CrayfishService, $timeout, $log, $window,$scope,URL_SERVICE) {
-        var vm  = this;
+        .controller('SalesAccessoriesController', SalesAccessoriesController)
+        .controller('LocationController', LocationController);
+
+function LocationController($scope, CrayfishService, $log) {
+    var vm = this;
+    //console.log('Google Maps API version: ' + google.maps.version);
+    this.locationList = [];
+    this.provinceList = [];
+    this.locationLocalList = [];
+    var map = CrayfishMap();
+    map.getPlaceRealtime(1);
+    map.getProvincePlace();
+
+    this.focusLocation = function (provinceId) {
+        map.getPlaceRealtime(provinceId);
+    }
+
+    function CrayfishMap() {
+        var map = {};
+        var options = {
+            zoomDefault: 10,
+        };        
+        return{
+            getProvincePlace: function () {
+                CrayfishService.getProvinceLocation().then(function success(response) {
+                    vm.provinceList = response;
+                }, function fail(e) {
+                    $log.error(e);
+                });
+            },
+            getPlaceRealtime: function (provinceId) {
+                var self = this;
+                CrayfishService.getPlaceLocation().then(function success(response) {
+                    console.log('response ::==', response);
+                    vm.locationLocalList = response;
+                    vm.locationList = _.map(response, function (location) {
+                        //console.log('location ::==', location);
+                        return  {
+                            title: location.pla_title,
+                            lat: parseFloat(location.pla_latitude),
+                            lng: parseFloat(location.pla_longitude),
+                            desc : location.pla_desc
+                        };
+                    });
+                    if (vm.locationList.length > 0) {
+                        self.buildGoogleMap(provinceId);
+                    }
+                }, function fail(e) {
+                    $log.error(e);
+                });
+            },
+            buildGoogleMap: function (provinceId) {
+                var self = this;
+                var centerIndex = self.findIndexCenterMarker(provinceId);
+                // ผูก element กับ MAP zoom ระดับ 6 เลขน้อย จะมองระยะกว้าง เลขมาก จะละเอียด center ให้ focus ที่ Bangkok
+                this.map = new google.maps.Map(document.getElementById('mapCrayfish'), {
+                    zoom: options.zoomDefault,
+                    center: vm.locationList[centerIndex],
+                    disableDefaultUI: true
+                });
+
+                // Loop วาด Marker บนแผนที่
+                angular.forEach(vm.locationList, function (location, index) {
+                    self.buildMarker(location)
+                });
+
+                self.addEventMap();
+            },
+            buildMarker: function (location) {
+                var self = this;
+                // สร้าง marker
+                var marker = new google.maps.Marker({position: location, map: this.map, title: location.title});
+                
+                var content = '<h1>'+location.title+'</h1><h3>'+location.desc+'</h3>';
+                
+                // สร้าง popup content ใส่ content เป็น location title
+                var infowindow = new google.maps.InfoWindow({content: content});
+                // สร้าง event ให้ จุด marker
+                marker.addListener('click', function (event) {
+                    //console.log(event);
+                    // เปิด popup เมื่อ click marker
+                    infowindow.open(self.map, marker);
+                });
+            },
+            findIndexCenterMarker: function (provinceId) {
+                //console.log('provinceId ::==', provinceId);
+                var centerIndex = _.findLastIndex(vm.locationLocalList, function (place) {
+                    //console.log('place.pro_id ::==', place.pro_id);
+                    //console.log('provinceId ::==', provinceId);
+                    //console.log('----------------------------------------');
+                    return place.pro_id == provinceId;
+                });
+                //console.log('centerIndex ::==', centerIndex);
+                return parseInt(centerIndex);
+            },
+            addEventMap: function () {
+                // ใส่ event click ให้ MAP ทั้ง MAP
+                this.map.addListener('click', function (event) {
+                    //console.log('latitude ::==' + event.latLng.lat());
+                    //console.log('longtitude ::==' + event.latLng.lng());
+                    // alert Latitude and Longitude
+                    alert('Latitude ::==' + event.latLng.lat() + ' \nLongitude ::==' + event.latLng.lng());
+                });
+            }
+        }
+    }
+}
+
+
+function SalesAccessoriesController(CrayfishService, $timeout, $log, $window, $scope, URL_SERVICE) {
+    var vm = this;
     // ********************** dropzone ***************
     //https://github.com/thatisuday/ng-dropzone
     $scope.dzOptions = {
@@ -12,6 +120,7 @@ function SalesAccessoriesController(CrayfishService, $timeout, $log, $window,$sc
         paramName: 'myfile',
         autoProcessQueue: false,
         maxFilesize: '10',
+        dictDefaultMessage: 'เลือกรูปสินค้าของคุณ สูงสุด 10 ไฟล์',
         uploadMultiple: true, // Adding This 
         acceptedFiles: 'image/jpeg, images/jpg, image/png',
         addRemoveLinks: true
@@ -74,6 +183,7 @@ function SalesCrayFishController(CrayfishService, URL_SERVICE, $timeout, $log, $
         paramName: 'myfile',
         autoProcessQueue: false,
         maxFilesize: '10',
+        dictDefaultMessage: 'เลือกรูปสินค้าของคุณ สูงสุด 10 ไฟล์',
         uploadMultiple: true, // Adding This 
         acceptedFiles: 'image/jpeg, images/jpg, image/png',
         addRemoveLinks: true

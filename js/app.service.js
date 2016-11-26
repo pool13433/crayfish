@@ -1,6 +1,6 @@
 app.service('CrayfishService', CrayfishService);
 
-function CrayfishService($q, URL_SERVICE) {
+function CrayfishService($q, URL_SERVICE, $http) {
     return {
         getListCrayfish: function (filter) {
             var defer = $q.defer();
@@ -52,7 +52,7 @@ function CrayfishService($q, URL_SERVICE) {
             });
             return defer.promise;
         },
-         postAccessories: function (form) {
+        postAccessories: function (form) {
             var defer = $q.defer();
             $.ajax({
                 type: "POST",
@@ -63,6 +63,24 @@ function CrayfishService($q, URL_SERVICE) {
                 defer.resolve(data);
             }).fail(function (jqXHR, textStatus) {
                 defer.reject(jqXHR);
+            });
+            return defer.promise;
+        },
+        getPlaceLocation: function () {
+            var defer = $q.defer();
+                $http.get(URL_SERVICE + '/service/GetMarketPlaceLocation', {}).then(function success(response) {
+                defer.resolve(response.data);
+            }, function error(e) {
+                defer.reject(e);
+            });
+            return defer.promise;
+        },
+        getProvinceLocation: function () {
+            var defer = $q.defer();
+                $http.get(URL_SERVICE + '/service/GetProvinceMinPlace', {}).then(function success(response) {
+                defer.resolve(response.data);
+            }, function error(e) {
+                defer.reject(e);
             });
             return defer.promise;
         }

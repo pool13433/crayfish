@@ -44,7 +44,8 @@ class Controller extends CController {
             $cs->registerScriptFile($baseUrl . '/node_modules/lodash/lodash.min.js', CClientScript::POS_END);
             $cs->registerScriptFile($baseUrl . '/node_modules/ng-facebook/ngFacebook.js', CClientScript::POS_END);
             $cs->registerScriptFile($baseUrl . '/node_modules/dropzone/dist/dropzone.js', CClientScript::POS_END);
-            $cs->registerScriptFile($baseUrl . '/node_modules/ngdropzone/dist/ng-dropzone.min.js', CClientScript::POS_END);
+            $cs->registerScriptFile($baseUrl . '/node_modules/ngdropzone/dist/ng-dropzone.min.js', CClientScript::POS_END);                         
+            $cs->registerScriptFile('https://maps.googleapis.com/maps/api/js?key='.Yii::app()->params['API_KEY'], CClientScript::POS_END);            
             
             $cs->registerScriptFile($baseUrl . '/js/app.js', CClientScript::POS_END);
             $cs->registerScriptFile($baseUrl . '/js/app.factory.js', CClientScript::POS_END);
