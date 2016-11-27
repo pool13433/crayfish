@@ -21,6 +21,12 @@ class SiteController extends Controller {
         $this->render('/site/crayfishs', array(
         ));
     }
+    
+     public function actionLogin() {
+
+        $this->render('/login', array(
+        ));
+    }
 
     public function actionAccessories() {
         $this->render('/site/accessories', array());

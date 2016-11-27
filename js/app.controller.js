@@ -3,7 +3,48 @@ app.controller('DoCrayfishController', DoCrayfishController)
         .controller('AccessoriesController', AccessoriesController)
         .controller('SalesCrayFishController', SalesCrayFishController)
         .controller('SalesAccessoriesController', SalesAccessoriesController)
-        .controller('LocationController', LocationController);
+        .controller('LocationController', LocationController)
+        .controller('SignInController', SignInController);
+
+function SignInController(AuthorizationService, $facebook, $log, $window) {
+
+    $facebook.getLoginStatus().then(function (response) {
+        console.log('response ::==', response);
+        if (response.status === 'connected') {
+            var authResponse = response.authResponse;
+            var accessToken = authResponse.accessToken;
+            $facebook.api('/me', 'get', {
+                access_token: accessToken,
+                fields: 'id,name,first_name,last_name,email,gender'
+            }).then(function (facebook) {
+                console.log('api me  ::==', facebook);
+                AuthorizationService.checkMemberProfile(facebook).then(function success(profile) {
+                    console.log('check member profile ::==', profile);
+                }, function fail(e) {
+                    $log.error(e);
+                });
+            }, function (e) {
+                $log.error(e);
+            });
+        } else if (response.status === 'not_authorized') {
+
+        } else {
+            $window.alert('Please log into Facebook.')
+        }
+    }, function (e) {
+        $log.error(e);
+    });
+
+    this.singInFacebook = function () {
+        $facebook.login().then(function (response) {
+            console.log('response ::==', response);
+        }, function (e) {
+            $log.error(e);
+        });
+
+    }
+
+}
 
 function LocationController($scope, CrayfishService, $log) {
     var vm = this;
@@ -12,22 +53,26 @@ function LocationController($scope, CrayfishService, $log) {
     this.provinceList = [];
     this.locationLocalList = [];
     var map = CrayfishMap();
-    map.getPlaceRealtime(1);
+
     map.getProvincePlace();
 
     this.focusLocation = function (provinceId) {
         map.getPlaceRealtime(provinceId);
+        vm.provinceId = provinceId;
     }
 
     function CrayfishMap() {
         var map = {};
         var options = {
             zoomDefault: 10,
-        };        
+        };
         return{
             getProvincePlace: function () {
+                var self = this;
                 CrayfishService.getProvinceLocation().then(function success(response) {
                     vm.provinceList = response;
+                    vm.provinceId = 1;
+                    self.getPlaceRealtime(vm.provinceId);
                 }, function fail(e) {
                     $log.error(e);
                 });
@@ -43,7 +88,7 @@ function LocationController($scope, CrayfishService, $log) {
                             title: location.pla_title,
                             lat: parseFloat(location.pla_latitude),
                             lng: parseFloat(location.pla_longitude),
-                            desc : location.pla_desc
+                            desc: location.pla_desc
                         };
                     });
                     if (vm.locationList.length > 0) {
@@ -74,9 +119,9 @@ function LocationController($scope, CrayfishService, $log) {
                 var self = this;
                 // สร้าง marker
                 var marker = new google.maps.Marker({position: location, map: this.map, title: location.title});
-                
-                var content = '<h1>'+location.title+'</h1><h3>'+location.desc+'</h3>';
-                
+
+                var content = '<h1>' + location.title + '</h1><h3>' + location.desc + '</h3>';
+
                 // สร้าง popup content ใส่ content เป็น location title
                 var infowindow = new google.maps.InfoWindow({content: content});
                 // สร้าง event ให้ จุด marker
@@ -306,6 +351,8 @@ function CrayfishsController(CrayfishService, $log) {
     }
 
 }
+
+
 function DoCrayfishController($timeout) {
     var vm = this;
     $timeout(function () {

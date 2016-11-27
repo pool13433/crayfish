@@ -1,4 +1,24 @@
-app.service('CrayfishService', CrayfishService);
+app.service('CrayfishService', CrayfishService)
+        .service('AuthorizationService', AuthorizationService);
+
+function AuthorizationService($q, URL_SERVICE, $http) {
+    $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+    return {
+        checkMemberProfile: function (facebook) {
+            var defer = $q.defer();
+            $http({
+                url: URL_SERVICE + '/service/CheckProfileSystem',
+                method: 'POST',
+                data: $.param(facebook)
+            }).then(function success(response) {
+                defer.resolve(response.data);
+            }, function error(e) {
+                defer.reject(e);
+            });
+            return defer.promise;
+        }
+    }
+}
 
 function CrayfishService($q, URL_SERVICE, $http) {
     return {
@@ -68,7 +88,7 @@ function CrayfishService($q, URL_SERVICE, $http) {
         },
         getPlaceLocation: function () {
             var defer = $q.defer();
-                $http.get(URL_SERVICE + '/service/GetMarketPlaceLocation', {}).then(function success(response) {
+            $http.get(URL_SERVICE + '/service/GetMarketPlaceLocation', {}).then(function success(response) {
                 defer.resolve(response.data);
             }, function error(e) {
                 defer.reject(e);
@@ -77,7 +97,7 @@ function CrayfishService($q, URL_SERVICE, $http) {
         },
         getProvinceLocation: function () {
             var defer = $q.defer();
-                $http.get(URL_SERVICE + '/service/GetProvinceMinPlace', {}).then(function success(response) {
+            $http.get(URL_SERVICE + '/service/GetProvinceMinPlace', {}).then(function success(response) {
                 defer.resolve(response.data);
             }, function error(e) {
                 defer.reject(e);

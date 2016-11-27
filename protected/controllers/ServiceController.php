@@ -21,13 +21,19 @@ class ServiceController extends Controller {
             $age = explode('-', $_POST['age']);
             $begin = $age[0];
             $end = $age[1];
-            $command->andWhere('c.cray_age >:begin AND c.cray_age <=:end', array(':begin' => $begin, ':end' => $end));
+            $command->andWhere('c.cray_age >:begin', array(':begin' => $begin));
+            if ($end != 0) {
+                $command->andWhere('c.cray_age <=:end', array(':end' => $end));
+            }
         }
         if (!empty($_POST['price'])) {
             $price = explode('-', $_POST['price']);
             $begin = $price[0];
             $end = $price[1];
-            $command->andWhere('c.cray_price >:begin AND c.cray_price <=:end', array(':begin' => $begin, ':end' => $end));
+            $command->andWhere('c.cray_price >:begin', array(':begin' => $begin));
+            if ($end != 0) {
+                $command->andWhere('c.cray_price <=:end', array(':end' => $end));
+            }
         }
         if (!empty($_POST['color']) && $_POST['color'] !== $this->default) {
             $command->andWhere('c.cray_color =:color', array(':color' => $_POST['color']));
@@ -50,7 +56,10 @@ class ServiceController extends Controller {
             $price = explode('-', $_POST['price']);
             $begin = $price[0];
             $end = $price[1];
-            $command->andWhere('a.acc_price >:begin AND a.acc_price <=:end', array(':begin' => $begin, ':end' => $end));
+            $command->andWhere('a.acc_price >:begin', array(':begin' => $begin));
+            if ($end != 0) {
+                $command->andWhere('a.acc_price <=:end', array(':end' => $end));
+            }
         }
         $accessories = $command->order('a.acc_id DESC')->queryAll();
         echo CJSON::encode($accessories);
@@ -64,11 +73,13 @@ class ServiceController extends Controller {
         array_unshift($type, array('type_id' => '', 'type_name' => $this->default));
         $price = array(
             '' => $this->default,
-            '100-1000' => '100-1000 บาท',
-            '1001-2000' => '1001-2000 บาท',
-            '2001-3000' => '2001-3000 บาท',
-            '3001-4000' => '3001-4000 บาท',
-            '4001-5000' => '4001-5000 บาท',
+            '100-1500' => '100-1500 บาท',
+            '1501-3000' => '1501-3000 บาท',
+            '3001-4500' => '3001-4500 บาท',
+            '4501-6000' => '4501-6000 บาท',
+            '6001-7500' => '6001-7500 บาท',
+            '7501-9000' => '7501-9000 บาท',
+            '9000-0' => '9001 บาท ขึ้นไป',
         );
 
         $filter = array(
@@ -86,20 +97,25 @@ class ServiceController extends Controller {
         array_unshift($colors, $this->default);
         $age = array(
             '' => $this->default,
-            '0-3' => '0-3 เดือน',
-            '4-6' => '4-6 เดือน',
-            '7-9' => '7-9 เดือน',
-            '10-13' => '10-13 เดือน',
-            '14-16' => '14-16 เดือน',
-            '17-19' => '17-19 เดือน',
+            '0-6' => '0-6 เดือน',
+            '7-12' => '7-12 เดือน (1 ปี)',
+            '13-18' => '13-18 เดือน',
+            '19-24' => '19-24 เดือน (2 ปี)',
+            '25-30' => '25-30 เดือน',
+            '31-36' => '31-36 เดือน (3 ปี)',
+            '37-42' => '37-42 เดือน',
+            '43-0' => '43 เดือน ขึ้นไป',
         );
         $price = array(
             '' => $this->default,
-            '100-1000' => '100-1000 บาท',
-            '1001-2000' => '1001-2000 บาท',
-            '2001-3000' => '2001-3000 บาท',
-            '3001-4000' => '3001-4000 บาท',
-            '4001-5000' => '4001-5000 บาท',
+            '100-1500' => '100-1500 บาท',
+            '1501-3000' => '1501-3000 บาท',
+            '3001-4500' => '3001-4500 บาท',
+            '4501-6000' => '4501-6000 บาท',
+            '6001-7500' => '6001-7500 บาท',
+            '7501-9000' => '7501-9000 บาท',
+            '9001-10500' => '9001-10500 บาท',
+            '10501-0' => '10501 บาท ขึ้นไป'
         );
         $filter = array(
             'ages' => $age,
@@ -222,8 +238,8 @@ class ServiceController extends Controller {
                 ->queryAll();
         echo CJSON::encode($places);
     }
-    
-    public function actionGetProvinceMinPlace(){
+
+    public function actionGetProvinceMinPlace() {
         $provinces = Yii::app()->db->createCommand()
                 ->select('p.*,count(cp.pla_id) as cnt_place')
                 ->from('province p')
@@ -233,6 +249,59 @@ class ServiceController extends Controller {
                 ->having('count(cp.pro_id)  > 0')
                 ->queryAll();
         echo CJSON::encode($provinces);
+    }
+
+    public function actionCheckProfileSystem() {
+        if (!empty($_POST)) {
+            $response = array();
+            //{id: "10207509059435749", name: "Poolsawat Poolsawat Apin", first_name: "Poolsawat", last_name: "Apin", email: "poon_mp@hotmail.com"…}
+            $facebookId = $_POST['id'];
+            $fname = $_POST['first_name'];
+            $lname = $_POST['last_name'];
+            $email = $_POST['email'];
+            $gender = $_POST['gender'];
+            $member = Yii::app()->db->createCommand()
+                    ->select('m.*')
+                    ->from('member m')
+                    ->where('m.mem_facebook =:facebookId', array(':facebookId' => $facebookId))
+                    ->queryRow();
+            if (!$member) {
+                $member = new Member();
+                $member->mem_date_create = new CDbExpression('NOW()');
+                $member->mem_date_update = new CDbExpression('NOW()');
+                $member->mem_email = $email;
+                $member->mem_facebook = $facebookId;
+                $member->mem_fname = $fname;
+                $member->mem_level = 0;
+                $member->mem_lname = $lname;
+                $member->mem_privileg = "customer";
+                $member->mem_status = "active";
+                $member->pro_id = 1;
+                if ($member->save()) {
+                    $response = array(
+                        'status' => true,
+                        'message' => '',
+                        'redirect' => ''
+                    );
+                } else {
+                    $response = array(
+                        'status' => false,
+                        'message' => '',
+                        'redirect' => ''
+                    );
+                }
+            } else {
+                $response = array(
+                    'status' => true,
+                    'message' => '',
+                    'redirect' => ''
+                );
+            }
+            Yii::app()->session['member'] = $member;
+            echo CJSON::encode($response);
+        }else{
+            echo CJSON::encode(array('status' => false , 'message' => 'method not allows !!'));
+        }
     }
 
 }

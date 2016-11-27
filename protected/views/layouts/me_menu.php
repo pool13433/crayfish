@@ -2,44 +2,14 @@
 <!-- Following Menu -->
 <div class="ui large top fixed menu transition hidden inverted">
     <div class="ui container">
-        <a class="active item" href="<?= $baseUrl ?>/site/index">หน้าหลัก</a>
-        <a class="item" href="<?= $baseUrl ?>/site/crayfishs">กุ้ง</a>
-        <a class="item" href="<?= $baseUrl ?>/site/accessories">อุปกรณ์</a>        
-        <div class="ui dropdown item">
-            ลงขายกับเราสิ
-            <i class="dropdown icon"></i>
-            <div class="menu">
-                <a class="item" href="<?= $baseUrl ?>/site/salesCrayfish">ขาย Crayfish</a>
-                <a class="item" href="<?= $baseUrl ?>/site/salesAccessories">ขาย อุปกรณ์</a>
-            </div>
-        </div>
-        <a class="item">ติดต่อเรา</a>
-        <a class="item">ลงโฆษณากับเราสิครับบบบบ</a>
-        <div class="right item">
-            <a class="ui inverted button">Log in1</a>
-            <a class="ui inverted button" href="<?= $baseUrl ?>/site/register">Sign Up</a>
-        </div>
+        <?php $this->renderPartial('/layouts/me_menu-items');?>
     </div>
 </div>
 
 
 
 <div class="ui vertical inverted sidebar menu left">
-    <a class="active item" href="<?= $baseUrl ?>/site/index">หน้าหลัก</a>
-    <a class="item" href="<?= $baseUrl ?>/site/crayfishs">กุ้ง</a>
-    <a class="item" href="<?= $baseUrl ?>/site/accessories">อุปกรณ์</a>
-    <div class="ui dropdown item">
-        ลงขายกับเราสิ
-        <i class="dropdown icon"></i>
-        <div class="menu">
-            <a class="item" href="<?= $baseUrl ?>/site/salesCrayfish">ขาย Crayfish</a>
-            <a class="item" href="<?= $baseUrl ?>/site/salesAccessories">ขาย อุปกรณ์</a>
-        </div>
-    </div>
-    <a class="item">ติดต่อเรา</a>
-    <a class="item">ลงโฆษณากับเราาาาาาาาาาาาาาาาาาา</a>
-    <a class="item">Login</a>
-    <a class="item" href="<?= $baseUrl ?>/site/register">Signup</a>
+    <?php $this->renderPartial('/layouts/me_menu-items');?>
 </div>
 
 <div class="ui inverted vertical masthead center aligned segment">
@@ -49,23 +19,7 @@
             <a class="toc item">
                 <i class="sidebar icon"></i>
             </a>
-            <a class="active item" href="<?= $baseUrl ?>/site/index">หน้าหลัก</a>
-            <a class="item" href="<?= $baseUrl ?>/site/crayfishs">กุ้ง</a>
-            <a class="item" href="<?= $baseUrl ?>/site/accessories">อุปกรณ์</a>
-            <div class="ui dropdown item">
-                ลงขายกับเราสิ
-                <i class="dropdown icon"></i>
-                <div class="menu">
-                    <a class="item" href="<?= $baseUrl ?>/site/salesCrayfish">ขาย Crayfish</a>
-                    <a class="item" href="<?= $baseUrl ?>/site/salesAccessories">ขาย อุปกรณ์</a>
-                </div>
-            </div>
-            <a class="item">ติดต่อเรา</a>
-            <a class="item">ลงโฆษณากับเราอิอิ</a>
-            <div class="right item">
-                <a class="ui inverted button">Log in1</a>
-                <a class="ui inverted button" href="<?= $baseUrl ?>/site/register">Sign Up</a>
-            </div>
+            <?php $this->renderPartial('/layouts/me_menu-items');?>
         </div>
     </div>
 
