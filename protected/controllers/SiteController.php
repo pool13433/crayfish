@@ -17,12 +17,10 @@ class SiteController extends Controller {
     }
 
     public function actionCrayfishs() {
-
-        $this->render('/site/crayfishs', array(
-        ));
+        $this->render('/site/crayfishs');
     }
-    
-     public function actionLogin() {
+
+    public function actionLogin() {
 
         $this->render('/login', array(
         ));
@@ -31,17 +29,86 @@ class SiteController extends Controller {
     public function actionAccessories() {
         $this->render('/site/accessories', array());
     }
-    
+
     public function actionLocation() {
-        $this->render('/site/location', array());
+        $this->render('/site/location');
     }
 
     public function actionSalesCrayfish() {
-        $this->render('/site/sales-crayfish', array());
+        $this->render('/site/sales-crayfish');
     }
 
     public function actionRegister() {
-        $this->render('/site/register', array());
+        if (empty($_POST)) {
+            $provinces = Yii::app()->db->createCommand()
+                    ->select('p.*')
+                    ->from('province p')
+                    ->order('p.pro_name asc')
+                    ->queryAll();
+            $this->render('/register', array(
+                'provinces' => $provinces
+            ));
+        } else {
+            $name = $_POST['name'];
+            $username = $_POST['username'];
+            $password = $_POST['password_0'];
+            $address = $_POST['address'];
+            $province = $_POST['province'];
+            $zipcode = $_POST['zipcode'];
+            $email = $_POST['email'];
+            $mobile = $_POST['mobile'];
+            $member = new Member();
+            $member->mem_address = $address;
+            $member->mem_date_create = new CDbExpression('NOW()');
+            $member->mem_date_update = new CDbExpression('NOW()');
+            $member->mem_email = $email;
+            $member->mem_fname = $name;
+            $member->mem_lname = 'xxxx';
+            $member->mem_username = $username;
+            $member->mem_password = $password;
+            $member->mem_mobile = $mobile;
+            $member->mem_status = 'active';
+            $member->mem_privileg = 'customer';
+            $member->mem_facebook = '';
+            $member->mem_zipcode = $zipcode;
+            $member->pro_id = $province;
+            $member->lev_id = 1;
+
+            $file = CUploadedFile::getInstanceByName('picture');
+            
+            if ($file != NULL) {
+                $fileNameNew = $member->pro_id . '_' . date('Ymd_His') . '.' . $file->extensionName;
+                $isUpload = $file->saveAs(Yii::getPathOfAlias('webroot') . '/uploads/profile/' . $fileNameNew);
+                $member->mem_picture = $fileNameNew;
+            }
+
+            if ($member->save()) {
+                $member = Yii::app()->db->createCommand()
+                        ->select('m.*
+                            ,(SELECT lev_name FROM member_level ml WHERE ml.lev_id = m.lev_id) as lev_name
+                            ,DATE_FORMAT(mem_date_create,\'%d-%m-%Y\') as mem_date_create,DATE_FORMAT(mem_date_update,\'%d-%m-%Y\') as mem_date_update')
+                        ->from('member m')
+                        ->where('m.mem_id =:memberId', array(':memberId' => $member->mem_id))
+                        ->queryRow();
+                Yii::app()->SESSION['member'] = $member;
+                $this->redirect(array('/site/index'));
+            } else {
+                var_dump($member->getErrors());
+                echo ' save fail';
+            }
+        }
+    }
+
+    public function actionProfile() {
+        $member = Yii::app()->SESSION['member'];
+        $this->render('/site/profile', array(
+            'member' => $member
+        ));
+    }
+
+    public function actionLogout() {
+        unset(Yii::app()->SESSION['member']);
+        $this->redirect(array('/site/index'));
     }
 
     public function actionSalesAccessories() {

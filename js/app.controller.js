@@ -4,8 +4,58 @@ app.controller('DoCrayfishController', DoCrayfishController)
         .controller('SalesCrayFishController', SalesCrayFishController)
         .controller('SalesAccessoriesController', SalesAccessoriesController)
         .controller('LocationController', LocationController)
-        .controller('SignInController', SignInController);
+        .controller('SignInController', SignInController)
+        .controller('RegisterController', RegisterController);
+function RegisterController($timeout) {
+    var vm = this;
+    $timeout(function () {
+        $('#btnBrowsProfile').on('click', function () {
+            console.log('xxxxxx');
+            $('#inputProfile').on('change', function () {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imageProfile').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(this.files[0]);
+            }).trigger('click');
+        });
 
+        $('form[name="register"]').form({
+            on: 'blur',
+            fields: {
+                picture: {identifier: 'picture', rules: [{type: 'empty', prompt: 'กรุณาเลือก รูปภาพโปรไฟล์ของคุณ'}]},
+                name: {identifier: 'name', rules: [{type: 'empty', prompt: 'กรุณากรอก ชื่อ'}]},
+                username: {identifier: 'username', rules: [
+                        {type: 'empty', prompt: 'กรุณากรอก Username'},
+                        {type: 'minLength[4]', prompt: 'กรุณากรอก Username 4 ตัวอักษร ขึ้นไป'}
+                    ]},
+                password_0: {identifier: 'password_0', rules: [
+                        {type: 'empty', prompt: 'กรุณากรอก รหัสผ่าน'},
+                        {type: 'minLength[4]', prompt: 'กรุณากรอก Password 4 ตัวอักษร ขึ้นไป'},
+                        {type: 'match[password_1]', prompt: 'กรุณากรอก รหัสผ่านให้ตรงกัน'}
+                    ]},
+                password_1: {identifier: 'password_1', rules: [
+                        {type: 'empty', prompt: 'กรุณากรอก ยืนยัน รหัสผ่าน'},
+                        {type: 'minLength[4]', prompt: 'กรุณากรอก Password 4 ตัวอักษร ขึ้นไป'},
+                        {type: 'match[password_0]', prompt: 'กรุณากรอก รหัสผ่านให้ตรงกัน'}
+                    ]},
+                email: {identifier: 'email', rules: [{type: 'email', prompt: 'กรุณากรอก อีเมล์ ให้ถูกต้อง'}]},
+                mobile: {identifier: 'mobile', rules: [{type: 'empty', prompt: 'กรุณากรอก มือถือ'}]},
+                address: {identifier: 'address', rules: [{type: 'empty', prompt: 'กรุณากรอก ที่อยู่'}]},
+                province: {identifier: 'province', rules: [{type: 'empty', prompt: 'กรุณาเลือก จังหวัด'}]},
+                zipcode: {identifier: 'zipcode', rules: [
+                        {type: 'empty', prompt: 'กรุณากรอก รหัสไปรษณีย์'},
+                        {type: 'maxLength[5]', prompt: 'กรุณากรอก Zipcode 5 ตัวอักษร เท่านั้น'}
+                    ]},
+            },
+            onSuccess: function (event, fields) {
+                $(fields).submit();
+                //event.preventDefault();                
+            }
+        });
+    }, 1000);
+
+}
 function SignInController(AuthorizationService, $facebook, $log, $window) {
 
     $facebook.getLoginStatus().then(function (response) {
@@ -20,6 +70,7 @@ function SignInController(AuthorizationService, $facebook, $log, $window) {
                 console.log('api me  ::==', facebook);
                 AuthorizationService.checkMemberProfile(facebook).then(function success(profile) {
                     console.log('check member profile ::==', profile);
+                    $window.location.href = profile.redirect;
                 }, function fail(e) {
                     $log.error(e);
                 });

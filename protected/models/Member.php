@@ -12,13 +12,15 @@
  * @property string $mem_password
  * @property string $mem_address
  * @property integer $pro_id
+ * @property string $mem_zipcode
  * @property string $mem_mobile
  * @property string $mem_email
+ * @property string $mem_picture
  * @property string $mem_date_create
  * @property string $mem_date_update
  * @property string $mem_status
  * @property string $mem_privileg
- * @property integer $mem_level
+ * @property integer $lev_id
  */
 class Member extends CActiveRecord {
 
@@ -36,16 +38,18 @@ class Member extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('mem_facebook, mem_fname, mem_lname, mem_email, mem_date_create, mem_date_update, mem_status, mem_privileg, mem_level', 'required'),
-            array('pro_id, mem_level', 'numerical', 'integerOnly' => true),
+            array('mem_fname, mem_lname, pro_id, mem_email, mem_date_create, mem_date_update, mem_status, mem_privileg, lev_id', 'required'),
+            array('pro_id, lev_id', 'numerical', 'integerOnly' => true),
             array('mem_facebook', 'length', 'max' => 25),
             array('mem_fname, mem_lname', 'length', 'max' => 100),
             array('mem_username, mem_password, mem_email', 'length', 'max' => 50),
+            array('mem_zipcode, mem_status, mem_privileg', 'length', 'max' => 8),
             array('mem_mobile', 'length', 'max' => 15),
-            array('mem_status, mem_privileg', 'length', 'max' => 8),
+            array('mem_picture', 'length', 'max' => 150),
+            array('mem_address', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('mem_id, mem_facebook, mem_fname, mem_lname, mem_username, mem_password, mem_address, pro_id, mem_mobile, mem_email, mem_date_create, mem_date_update, mem_status, mem_privileg, mem_level', 'safe', 'on' => 'search'),
+            array('mem_id, mem_facebook, mem_fname, mem_lname, mem_username, mem_password, mem_address, pro_id, mem_zipcode, mem_mobile, mem_email, mem_picture, mem_date_create, mem_date_update, mem_status, mem_privileg, lev_id', 'safe', 'on' => 'search'),
         );
     }
 
@@ -72,13 +76,15 @@ class Member extends CActiveRecord {
             'mem_password' => 'Mem Password',
             'mem_address' => 'Mem Address',
             'pro_id' => 'Pro',
+            'mem_zipcode' => 'Mem Zipcode',
             'mem_mobile' => 'Mem Mobile',
             'mem_email' => 'Mem Email',
+            'mem_picture' => 'Mem Picture',
             'mem_date_create' => 'Mem Date Create',
             'mem_date_update' => 'Mem Date Update',
             'mem_status' => 'Mem Status',
             'mem_privileg' => 'Mem Privileg',
-            'mem_level' => 'Mem Level',
+            'lev_id' => 'Lev',
         );
     }
 
@@ -107,13 +113,15 @@ class Member extends CActiveRecord {
         $criteria->compare('mem_password', $this->mem_password, true);
         $criteria->compare('mem_address', $this->mem_address, true);
         $criteria->compare('pro_id', $this->pro_id);
+        $criteria->compare('mem_zipcode', $this->mem_zipcode, true);
         $criteria->compare('mem_mobile', $this->mem_mobile, true);
         $criteria->compare('mem_email', $this->mem_email, true);
+        $criteria->compare('mem_picture', $this->mem_picture, true);
         $criteria->compare('mem_date_create', $this->mem_date_create, true);
         $criteria->compare('mem_date_update', $this->mem_date_update, true);
         $criteria->compare('mem_status', $this->mem_status, true);
         $criteria->compare('mem_privileg', $this->mem_privileg, true);
-        $criteria->compare('mem_level', $this->mem_level);
+        $criteria->compare('lev_id', $this->lev_id);
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,

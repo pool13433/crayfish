@@ -253,7 +253,6 @@ class ServiceController extends Controller {
 
     public function actionCheckProfileSystem() {
         if (!empty($_POST)) {
-            $response = array();
             //{id: "10207509059435749", name: "Poolsawat Poolsawat Apin", first_name: "Poolsawat", last_name: "Apin", email: "poon_mp@hotmail.com"…}
             $facebookId = $_POST['id'];
             $fname = $_POST['first_name'];
@@ -261,46 +260,36 @@ class ServiceController extends Controller {
             $email = $_POST['email'];
             $gender = $_POST['gender'];
             $member = Yii::app()->db->createCommand()
-                    ->select('m.*')
+                    ->select('m.*
+                            ,(SELECT lev_name FROM member_level ml WHERE ml.lev_id = m.lev_id) as lev_name
+                            ,DATE_FORMAT(mem_date_create,\'%d-%m-%Y\') as mem_date_create,DATE_FORMAT(mem_date_update,\'%d-%m-%Y\') as mem_date_update')
                     ->from('member m')
                     ->where('m.mem_facebook =:facebookId', array(':facebookId' => $facebookId))
-                    ->queryRow();
-            if (!$member) {
+                    ->queryRow();                  
+            if (!$member) { // New User
                 $member = new Member();
                 $member->mem_date_create = new CDbExpression('NOW()');
                 $member->mem_date_update = new CDbExpression('NOW()');
                 $member->mem_email = $email;
                 $member->mem_facebook = $facebookId;
                 $member->mem_fname = $fname;
-                $member->mem_level = 0;
+                $member->lev_id = 1;
                 $member->mem_lname = $lname;
                 $member->mem_privileg = "customer";
                 $member->mem_status = "active";
+                $member->mem_picture = '';
                 $member->pro_id = 1;
-                if ($member->save()) {
-                    $response = array(
-                        'status' => true,
-                        'message' => '',
-                        'redirect' => ''
-                    );
-                } else {
-                    $response = array(
-                        'status' => false,
-                        'message' => '',
-                        'redirect' => ''
-                    );
+                if (!$member->save()) {
+                    $response = array('status' => false, 'message' => 'เกิดข้อผิดพลาด กรุณาติดต่อ ผู้ดูแลระบบ');
+                    echo CJSON::encode($response);
+                    exit();
                 }
-            } else {
-                $response = array(
-                    'status' => true,
-                    'message' => '',
-                    'redirect' => ''
-                );
             }
             Yii::app()->session['member'] = $member;
+            $response = array('status' => true, 'message' => 'เข้าระบบสำเร็จ', 'redirect' => Yii::app()->createUrl('/site/index'));
             echo CJSON::encode($response);
-        }else{
-            echo CJSON::encode(array('status' => false , 'message' => 'method not allows !!'));
+        } else {
+            echo CJSON::encode(array('status' => false, 'message' => 'method not allows !!'));
         }
     }
 

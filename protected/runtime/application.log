@@ -5229,3 +5229,1635 @@ Stack trace:
 REQUEST_URI=/crayfish/service/CheckProfileSystem
 in C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php (259)
 in C:\xampp\htdocs\crayfish\index.php (13)
+2016/11/28 12:58:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/site
+---
+2016/11/28 12:58:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/{{crayfish.cray_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/%7B%7Bcrayfish.cray_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 12:58:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/{{crayfish.cray_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/%7B%7Bcrayfish.cray_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 12:58:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/{{crayfish.cray_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/%7B%7Bcrayfish.cray_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 12:58:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 12:58:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_151343_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_151343_0.
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 12:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/{{accesory.acc_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/%7B%7Baccesory.acc_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 12:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/{{accesory.acc_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/%7B%7Baccesory.acc_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 12:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/{{accesory.acc_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/%7B%7Baccesory.acc_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 12:58:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/xxxxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/xxxxx
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 13:12:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:15:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:16:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:17:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:20:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:22:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:22:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('profile')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('profile')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/profile')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/index.php/site/profile
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:31:05 [error] [php] Undefined index: mem_profile (C:\xampp\htdocs\crayfish\protected\views\site\profile.php:6)
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\crayfish\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\crayfish\protected\controllers\SiteController.php(51): SiteController->render()
+#3 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): SiteController->actionProfile()
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\crayfish\index.php(13): CWebApplication->run()
+REQUEST_URI=/crayfish/index.php/site/profile
+in C:\xampp\htdocs\crayfish\protected\views\site\profile.php (6)
+in C:\xampp\htdocs\crayfish\protected\controllers\SiteController.php (51)
+in C:\xampp\htdocs\crayfish\index.php (13)
+2016/11/28 13:31:15 [error] [php] Undefined index: mem_profile (C:\xampp\htdocs\crayfish\protected\views\site\profile.php:6)
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\crayfish\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\crayfish\protected\controllers\SiteController.php(51): SiteController->render()
+#3 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): SiteController->actionProfile()
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\crayfish\index.php(13): CWebApplication->run()
+REQUEST_URI=/crayfish/index.php/site/profile
+in C:\xampp\htdocs\crayfish\protected\views\site\profile.php (6)
+in C:\xampp\htdocs\crayfish\protected\controllers\SiteController.php (51)
+in C:\xampp\htdocs\crayfish\index.php (13)
+2016/11/28 13:33:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/index.php/index
+HTTP_REFERER=http://localhost/crayfish/site/location
+---
+2016/11/28 13:33:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:33:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:33:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:33:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/site/index
+---
+2016/11/28 13:33:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/site/index
+---
+2016/11/28 13:33:40 [error] [php] Undefined index: mem_profile (C:\xampp\htdocs\crayfish\protected\views\site\profile.php:6)
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\crayfish\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\crayfish\protected\controllers\SiteController.php(51): SiteController->render()
+#3 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): SiteController->actionProfile()
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\crayfish\index.php(13): CWebApplication->run()
+REQUEST_URI=/crayfish/index.php/site/profile
+in C:\xampp\htdocs\crayfish\protected\views\site\profile.php (6)
+in C:\xampp\htdocs\crayfish\protected\controllers\SiteController.php (51)
+in C:\xampp\htdocs\crayfish\index.php (13)
+2016/11/28 13:52:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:52:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:52:13 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as mem_date_create),(DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)' at line 1. The SQL statement executed was: SELECT m.*,(DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create),(DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId.
+in C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php (266)
+in C:\xampp\htdocs\crayfish\index.php (13)
+2016/11/28 13:52:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as mem_date_create),(DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)' at line 1. The SQL statement executed was: SELECT m.*,(DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create),(DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId' in C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php(266): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): ServiceController->actionCheckProfileSystem()
+#3 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('CheckProfileSys...')
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('service/CheckPr...')
+#8 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/crayfish/service/CheckProfileSystem
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 13:52:19 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as mem_date_create),(DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)' at line 1. The SQL statement executed was: SELECT m.*,(DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create),(DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId.
+in C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php (266)
+in C:\xampp\htdocs\crayfish\index.php (13)
+2016/11/28 13:52:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as mem_date_create),(DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)' at line 1. The SQL statement executed was: SELECT m.*,(DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create),(DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId' in C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php(266): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): ServiceController->actionCheckProfileSystem()
+#3 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('CheckProfileSys...')
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('service/CheckPr...')
+#8 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/crayfish/service/CheckProfileSystem
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 13:52:25 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as mem_date_create),(DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)' at line 1. The SQL statement executed was: SELECT m.*,(DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create),(DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId.
+in C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php (266)
+in C:\xampp\htdocs\crayfish\index.php (13)
+2016/11/28 13:52:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as mem_date_create),(DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)' at line 1. The SQL statement executed was: SELECT m.*,(DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create),(DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId' in C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php(266): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): ServiceController->actionCheckProfileSystem()
+#3 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('CheckProfileSys...')
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('service/CheckPr...')
+#8 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/crayfish/service/CheckProfileSystem
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 13:53:01 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '),DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+' at line 1. The SQL statement executed was: SELECT m.*,DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create),DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId.
+in C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php (266)
+in C:\xampp\htdocs\crayfish\index.php (13)
+2016/11/28 13:53:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '),DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+' at line 1. The SQL statement executed was: SELECT m.*,DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create),DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId' in C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php(266): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): ServiceController->actionCheckProfileSystem()
+#3 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('CheckProfileSys...')
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('service/CheckPr...')
+#8 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/crayfish/service/CheckProfileSystem
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 13:53:59 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '),DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+' at line 1. The SQL statement executed was: SELECT m.*,DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create),DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId.
+in C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php (266)
+in C:\xampp\htdocs\crayfish\index.php (13)
+2016/11/28 13:53:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '),DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+' at line 1. The SQL statement executed was: SELECT m.*,DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create),DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update)
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId' in C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php(266): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): ServiceController->actionCheckProfileSystem()
+#3 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('CheckProfileSys...')
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('service/CheckPr...')
+#8 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/crayfish/service/CheckProfileSystem
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 13:55:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:55:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:55:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 13:55:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:00:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:00:16 [error] [exception.CException] exception 'CException' with message 'Property "Member.mem_level" is not defined.' in C:\xampp\htdocs\crayfish\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\db\ar\CActiveRecord.php(161): CComponent->__set('mem_level', 0)
+#1 C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php(275): CActiveRecord->__set('mem_level', 0)
+#2 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): ServiceController->actionCheckProfileSystem()
+#3 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('CheckProfileSys...')
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('service/CheckPr...')
+#8 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/crayfish/service/CheckProfileSystem
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:00:23 [error] [exception.CException] exception 'CException' with message 'Property "Member.mem_level" is not defined.' in C:\xampp\htdocs\crayfish\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\db\ar\CActiveRecord.php(161): CComponent->__set('mem_level', 0)
+#1 C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php(275): CActiveRecord->__set('mem_level', 0)
+#2 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): ServiceController->actionCheckProfileSystem()
+#3 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('CheckProfileSys...')
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('service/CheckPr...')
+#8 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/crayfish/service/CheckProfileSystem
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:00:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:00:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/site/index
+---
+2016/11/28 15:00:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/site/index
+---
+2016/11/28 15:00:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/{{crayfish.cray_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/%7B%7Bcrayfish.cray_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 15:00:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/{{crayfish.cray_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/%7B%7Bcrayfish.cray_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 15:00:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_151343_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_151343_0.
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 15:00:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 15:00:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/{{accesory.acc_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/%7B%7Baccesory.acc_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 15:00:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/{{accesory.acc_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/%7B%7Baccesory.acc_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 15:00:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/xxxxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/xxxxx
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 15:01:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/site/index
+---
+2016/11/28 15:06:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/{{crayfish.cray_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/%7B%7Bcrayfish.cray_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 15:06:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/{{crayfish.cray_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/%7B%7Bcrayfish.cray_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 15:06:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 15:06:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_151343_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_151343_0.
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 15:06:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/{{crayfish.cray_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/%7B%7Bcrayfish.cray_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 15:06:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/{{crayfish.cray_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/%7B%7Bcrayfish.cray_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 15:06:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 15:06:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_151343_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_151343_0.
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 15:06:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/{{accesory.acc_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/%7B%7Baccesory.acc_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 15:06:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/{{accesory.acc_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/%7B%7Baccesory.acc_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 15:06:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/xxxxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/xxxxx
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 15:11:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:12:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:13:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:13:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:13:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:13:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:13:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:13:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:13:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:13:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:14:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:14:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:14:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:15:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:15:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:15:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:15:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:16:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:16:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:16:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:16:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:17:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:18:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:18:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:18:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:18:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:18:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\crayfish\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(270): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('undefined')
+#2 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('site/undefined')
+#3 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crayfish/site/undefined
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:20:36 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(SELECT lev_name FROM member_lavel ml WHERE ml.lev_id = m.lev_id) as lev_name
+  ' at line 2. The SQL statement executed was: SELECT m.*,
+                            ,(SELECT lev_name FROM member_lavel ml WHERE ml.lev_id = m.lev_id) as lev_name
+                            ,DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create,DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId.
+in C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php (268)
+in C:\xampp\htdocs\crayfish\index.php (13)
+2016/11/28 15:20:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(SELECT lev_name FROM member_lavel ml WHERE ml.lev_id = m.lev_id) as lev_name
+  ' at line 2. The SQL statement executed was: SELECT m.*,
+                            ,(SELECT lev_name FROM member_lavel ml WHERE ml.lev_id = m.lev_id) as lev_name
+                            ,DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create,DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId' in C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php(268): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): ServiceController->actionCheckProfileSystem()
+#3 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('CheckProfileSys...')
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('service/CheckPr...')
+#8 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/crayfish/service/CheckProfileSystem
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:20:57 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(SELECT lev_name FROM member_level ml WHERE ml.lev_id = m.lev_id) as lev_name
+  ' at line 2. The SQL statement executed was: SELECT m.*,
+                            ,(SELECT lev_name FROM member_level ml WHERE ml.lev_id = m.lev_id) as lev_name
+                            ,DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create,DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId.
+in C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php (268)
+in C:\xampp\htdocs\crayfish\index.php (13)
+2016/11/28 15:20:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(SELECT lev_name FROM member_level ml WHERE ml.lev_id = m.lev_id) as lev_name
+  ' at line 2. The SQL statement executed was: SELECT m.*,
+                            ,(SELECT lev_name FROM member_level ml WHERE ml.lev_id = m.lev_id) as lev_name
+                            ,DATE_FORMAT(mem_date_create,'%d-%m-%Y') as mem_date_create,DATE_FORMAT(mem_date_update,'%d-%m-%Y') as mem_date_update
+FROM `member` `m`
+WHERE m.mem_facebook =:facebookId' in C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\crayfish\protected\controllers\ServiceController.php(268): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): ServiceController->actionCheckProfileSystem()
+#3 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): CController->run('CheckProfileSys...')
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('service/CheckPr...')
+#8 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/crayfish/service/CheckProfileSystem
+HTTP_REFERER=http://localhost/crayfish/site/login
+---
+2016/11/28 15:23:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:25:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:25:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:27:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:29:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:29:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:29:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:29:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:29:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 15:32:35 [error] [php] Undefined variable: type (C:\xampp\htdocs\crayfish\protected\views\register.php:66)
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\crayfish\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\crayfish\protected\controllers\SiteController.php(42): SiteController->render()
+#3 C:\xampp\htdocs\crayfish\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#4 C:\xampp\htdocs\crayfish\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\crayfish\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\crayfish\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\crayfish\index.php(13): CWebApplication->run()
+REQUEST_URI=/crayfish/site/register
+in C:\xampp\htdocs\crayfish\protected\views\register.php (66)
+in C:\xampp\htdocs\crayfish\protected\controllers\SiteController.php (42)
+in C:\xampp\htdocs\crayfish\index.php (13)
+2016/11/28 16:42:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/site/index
+---
+2016/11/28 16:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 16:43:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 16:43:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:04:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:04:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:05:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/profile/xxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/profile...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/profile/xxx
+HTTP_REFERER=http://localhost/crayfish/index.php/site/profile
+---
+2016/11/28 17:05:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/profile/xxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/profile...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/profile/xxx
+HTTP_REFERER=http://localhost/crayfish/index.php/site/profile
+---
+2016/11/28 17:07:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/profile/xxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/profile...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/profile/xxx
+HTTP_REFERER=http://localhost/crayfish/index.php/site/profile
+---
+2016/11/28 17:07:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/profile/xxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/profile...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/profile/xxx
+HTTP_REFERER=http://localhost/crayfish/index.php/site/profile
+---
+2016/11/28 17:07:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:07:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:07:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:07:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/profile/xxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/profile...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/profile/xxx
+HTTP_REFERER=http://localhost/crayfish/index.php/site/profile
+---
+2016/11/28 17:07:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/profile/xxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/profile...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/profile/xxx
+HTTP_REFERER=http://localhost/crayfish/index.php/site/profile
+---
+2016/11/28 17:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:07:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:07:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:07:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/profile/xxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/profile...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/profile/xxx
+HTTP_REFERER=http://localhost/crayfish/index.php/site/profile
+---
+2016/11/28 17:07:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/profile/xxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/profile...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/profile/xxx
+HTTP_REFERER=http://localhost/crayfish/index.php/site/profile
+---
+2016/11/28 17:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:08:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:08:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:09:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:09:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:10:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:10:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:10:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:10:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:12:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:13:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:13:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:21:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/index.php/site/index
+---
+2016/11/28 17:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/{{accesory.acc_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/%7B%7Baccesory.acc_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 17:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/xxxxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/xxxxx
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 17:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/{{crayfish.cray_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/%7B%7Bcrayfish.cray_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 17:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/{{crayfish.cray_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/%7B%7Bcrayfish.cray_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 17:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_152054_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_152054_0.
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 17:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/crayfishs/20161124_151343_0.".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/crayfis...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/crayfishs/20161124_151343_0.
+HTTP_REFERER=http://localhost/crayfish/site/crayfishs
+---
+2016/11/28 17:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/{{accesory.acc_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/%7B%7Baccesory.acc_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 17:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/{{accesory.acc_picture}}".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/%7B%7Baccesory.acc_picture%7D%7D
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
+2016/11/28 17:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/accessory/xxxxx".' in C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\crayfish\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/accesso...')
+#1 C:\xampp\htdocs\crayfish\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\crayfish\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crayfish/uploads/accessory/xxxxx
+HTTP_REFERER=http://localhost/crayfish/site/accessories
+---
