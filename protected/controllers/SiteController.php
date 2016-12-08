@@ -75,7 +75,7 @@ class SiteController extends Controller {
             $member->lev_id = 1;
 
             $file = CUploadedFile::getInstanceByName('picture');
-            
+
             if ($file != NULL) {
                 $fileNameNew = $member->pro_id . '_' . date('Ymd_His') . '.' . $file->extensionName;
                 $isUpload = $file->saveAs(Yii::getPathOfAlias('webroot') . '/uploads/profile/' . $fileNameNew);
@@ -130,8 +130,16 @@ class SiteController extends Controller {
                 ->from('crayfish c')
                 ->where('c.cray_id =:id', array(':id' => $id))
                 ->queryRow();
-        $this->render('/site/docrayfish', array(
-            'crayfish' => $crayfish
+
+        $pictures = Yii::app()->db->createCommand()
+                ->select('p.*')
+                ->from('crayfish_picture p')
+                ->where('p.cray_id =:crayId', array(':crayId' => $id))
+                ->queryAll();
+
+        $this->render('/site/crayfish-detail', array(
+            'crayfish' => $crayfish,
+            'pictures' => $pictures
         ));
     }
 

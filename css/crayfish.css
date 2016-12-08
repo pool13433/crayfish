@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 6, 2016, 10:27:58 PM
+    Author     : PoolLaptop
+*/
+@media screen and (max-width: 799px) and (min-width: 320px) {
+    .mobile{
+        visibility: visible;
+        display: inline;
+    }
+    .mornitor{
+        visibility: hidden;
+        display: none;
+    }
+}
+@media screen and (max-width: 1400px) and (min-width: 800px) {
+    .mobile{
+        visibility: hidden;
+        display: none;
+    }
+    .mornitor{
+        visibility: visible;
+        display: inline;
+    }
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}

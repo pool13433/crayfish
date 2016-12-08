@@ -3,33 +3,41 @@
     <div class="ui container">        
         <div class="ui column grid stackable">
             <div class="three wide column">
-                <h5 class="ui top attached header">
-                    ค้นหาด้วย ประเภทอุปกรณ์
-                </h5>
-                <div class="ui attached segment">
-                    <div class="ui form">
-                        <div class="grouped fields">
-                            <div class="field" ng-repeat="type in vm.typeList">
-                                <div class="ui radio checkbox">
-                                    <input name="type" tabindex="0" type="radio" value="{{type.type_id}}" 
-                                           ng-model="vm.type" ng-click="vm.filterEvent()" ng-checked="type.type_id === ''">
-                                    <label>{{type.type_name}}</label>
+                <div class="ui vertical accordion menu fluid">
+                    <div class="item">
+                        <a class="title">
+                            <i class="dropdown icon"></i>
+                            ค้นหาด้วย ประเภทอุปกรณ์
+                        </a>
+                        <div class="content">
+                            <div class="ui form">
+                                <div class="grouped fields">
+                                    <div class="field" ng-repeat="type in vm.typeList">
+                                        <div class="ui radio checkbox">
+                                            <input name="type" tabindex="0" type="radio" value="{{type.type_id}}" 
+                                                   ng-model="vm.type" ng-click="vm.filterEvent()" ng-checked="type.type_id === ''">
+                                            <label>{{type.type_name}}</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <h5 class="ui attached header">
-                    ค้นหาด้วย ช่วงราคา
-                </h5>
-                <div class="ui attached segment">
-                    <div class="ui form">
-                        <div class="grouped fields">
-                            <div class="field" ng-repeat="(key,value) in vm.priceList">
-                                <div class="ui radio checkbox">
-                                    <input name="price" tabindex="0" type="radio" value="{{key}}" 
-                                           ng-model="vm.price" ng-click="vm.filterEvent()" ng-checked="key === '' ">
-                                    <label>{{value}}</label>
+                    <div class="item">
+                        <a class="title">
+                            <i class="dropdown icon"></i>
+                            ค้นหาด้วย ช่วงราคา
+                        </a>
+                        <div class="content">
+                            <div class="ui form">
+                                <div class="grouped fields">
+                                    <div class="field" ng-repeat="(key, value) in vm.priceList">
+                                        <div class="ui radio checkbox">
+                                            <input name="price" tabindex="0" type="radio" value="{{key}}" 
+                                                   ng-model="vm.price" ng-click="vm.filterEvent()" ng-checked="key === ''">
+                                            <label>{{value}}</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -42,7 +50,7 @@
                 </h2>
                 <div class="ui four cards stackable">           
 
-                    <div class="ui card" ng-repeat="accesory in vm.accessoryList">
+                    <div class="ui card" ng-repeat="accesory in vm.accessoryList" ng-cloak>
                         <a class="image" href="<?= $baseUrl ?>/site/doAccesories/{{accesory.acc_id}}">
                             <img src="<?= $baseUrl ?>/uploads/accessory/{{accesory.acc_picture}}">
                         </a>

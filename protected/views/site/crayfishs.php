@@ -3,49 +3,63 @@
     <div class="ui container">        
         <div class="ui column grid stackable">
             <div class="three wide column">
-                <h5 class="ui top attached header">
-                    ค้นหาด้วย อายุกุ้ง
-                </h5>
-                <div class="ui attached segment">
-                    <div class="ui form">
-                        <div class="grouped fields">
-                            <div class="field" ng-repeat="(key, value) in vm.ageList">
-                                <div class="ui radio checkbox">
-                                    <input name="age" tabindex="0" type="radio" value="{{key}}" 
-                                           ng-model="vm.age" ng-click="vm.filterEvent()" ng-checked="key == ''">
-                                    <label>{{value}}</label>
+
+                <div class="ui vertical accordion menu fluid">
+                    <div class="item">
+                        <a class="title">
+                            <i class="dropdown icon"></i>
+                            ค้นหาด้วย อายุกุ้ง
+                        </a>
+                        <div class="content">
+                            <div class="ui form">
+                                <div class="grouped fields">
+                                    <div class="field" ng-repeat="(key, value) in vm.ageList">
+                                        <div class="ui radio checkbox">
+                                            <input name="age" tabindex="0" type="radio" value="{{key}}" 
+                                                   ng-model="vm.age" ng-click="vm.filterEvent()" ng-checked="key == ''">
+                                            <label>{{value}}</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <h5 class="ui attached header">
-                    ค้นหาด้วย ช่วงราคา
-                </h5>
-                <div class="ui attached segment">
-                    <div class="ui form">
-                        <div class="grouped fields">
-                            <div class="field" ng-repeat="(key,value) in vm.priceList">
-                                <div class="ui radio checkbox">
-                                    <input name="price" tabindex="0" type="radio" value="{{key}}" 
-                                           ng-model="vm.price" ng-click="vm.filterEvent()" ng-checked="key === ''">
-                                    <label>{{value}}</label>
+
+                    <div class="item">
+                        <a class="title">
+                            <i class="dropdown icon"></i>
+                            ค้นหาด้วย ช่วงราคา
+                        </a>
+                        <div class="content">
+                            <div class="ui form">
+                                <div class="grouped fields">
+                                    <div class="field" ng-repeat="(key,value) in vm.priceList">
+                                        <div class="ui radio checkbox">
+                                            <input name="price" tabindex="0" type="radio" value="{{key}}" 
+                                                   ng-model="vm.price" ng-click="vm.filterEvent()" ng-checked="key === ''">
+                                            <label>{{value}}</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <h5 class="ui attached header">
-                    ค้นหาด้วย สีกุ้ง
-                </h5>
-                <div class="ui attached segment">
-                    <div class="ui form">
-                        <div class="grouped fields">
-                            <div class="field" ng-repeat="(key, value) in vm.colorList">
-                                <div class="ui radio checkbox">
-                                    <input name="color" tabindex="0" type="radio" value="{{value}}" 
-                                           ng-model="vm.color" ng-click="vm.filterEvent()" ng-checked="key == '0'">
-                                    <label>{{value}}</label>
+
+                    <div class="item">
+                        <a class="title">
+                            <i class="dropdown icon"></i>
+                            ค้นหาด้วย สีกุ้ง
+                        </a>
+                        <div class="content">
+                            <div class="ui form">
+                                <div class="grouped fields">
+                                    <div class="field" ng-repeat="(key, value) in vm.colorList">
+                                        <div class="ui radio checkbox">
+                                            <input name="color" tabindex="0" type="radio" value="{{value}}" 
+                                                   ng-model="vm.color" ng-click="vm.filterEvent()" ng-checked="key == '0'">
+                                            <label>{{value}}</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -56,9 +70,9 @@
                 <h2 class="ui dividing header">
                     Crayfish
                 </h2>
-                <div class="ui four cards stackable">           
+                <div class="ui four cards stackable" >           
 
-                    <div class="ui card" ng-repeat="crayfish in vm.crayfishList">
+                    <div class="ui card" ng-repeat="crayfish in vm.crayfishList" ng-cloak>
                         <a class="image" href="<?= $baseUrl ?>/site/doCrayFish/{{crayfish.cray_id}}">
                             <img src="<?= $baseUrl ?>/uploads/crayfishs/{{crayfish.cray_picture}}">
                         </a>

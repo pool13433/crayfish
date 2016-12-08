@@ -16,8 +16,11 @@
             body *{
                 font-family: superspace;
             }
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+                display: none !important;
+            }
         </style>
-        <script type="text/javascript"> var CRAYFISH_URL = '<?=$baseUrl?>'; </script>
+        <script type="text/javascript"> var CRAYFISH_URL = '<?= $baseUrl ?>';</script>
     </head>
 
     <body>

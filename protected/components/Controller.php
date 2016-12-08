@@ -30,6 +30,7 @@ class Controller extends CController {
 
             $cs = Yii::app()->clientScript;
             $cs->registerCssFile($baseUrl . '/plugins/semantic-ui-css/semantic.css');               
+            $cs->registerCssFile($baseUrl . '/css/crayfish.css');               
             $cs->registerCssFile($baseUrl . '/plugins/owl-carousel-1.3.3/owl.carousel.min.css');
             $cs->registerCssFile($baseUrl . '/plugins/owl-carousel-1.3.3/owl.theme.min.css');
             $cs->registerCssFile($baseUrl . '/plugins/owl-carousel-1.3.3/owl.transitions.min.css');         

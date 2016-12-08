@@ -59,7 +59,7 @@ function RegisterController($timeout) {
 function SignInController(AuthorizationService, $facebook, $log, $window) {
 
     $facebook.getLoginStatus().then(function (response) {
-        console.log('response ::==', response);
+        //console.log('response ::==', response);
         if (response.status === 'connected') {
             var authResponse = response.authResponse;
             var accessToken = authResponse.accessToken;
@@ -67,9 +67,9 @@ function SignInController(AuthorizationService, $facebook, $log, $window) {
                 access_token: accessToken,
                 fields: 'id,name,first_name,last_name,email,gender'
             }).then(function (facebook) {
-                console.log('api me  ::==', facebook);
+                //console.log('api me  ::==', facebook);
                 AuthorizationService.checkMemberProfile(facebook).then(function success(profile) {
-                    console.log('check member profile ::==', profile);
+                    //console.log('check member profile ::==', profile);
                     $window.location.href = profile.redirect;
                 }, function fail(e) {
                     $log.error(e);
@@ -88,7 +88,7 @@ function SignInController(AuthorizationService, $facebook, $log, $window) {
 
     this.singInFacebook = function () {
         $facebook.login().then(function (response) {
-            console.log('response ::==', response);
+            //console.log('response ::==', response);
         }, function (e) {
             $log.error(e);
         });
@@ -131,7 +131,7 @@ function LocationController($scope, CrayfishService, $log) {
             getPlaceRealtime: function (provinceId) {
                 var self = this;
                 CrayfishService.getPlaceLocation().then(function success(response) {
-                    console.log('response ::==', response);
+                    //console.log('response ::==', response);
                     vm.locationLocalList = response;
                     vm.locationList = _.map(response, function (location) {
                         //console.log('location ::==', location);
@@ -207,20 +207,13 @@ function LocationController($scope, CrayfishService, $log) {
 }
 
 
-function SalesAccessoriesController(CrayfishService, $timeout, $log, $window, $scope, URL_SERVICE) {
+function SalesAccessoriesController(CrayfishService, UPLOAD_CONFIG, $timeout, $log, $window, $scope, URL_SERVICE) {
     var vm = this;
     // ********************** dropzone ***************
     //https://github.com/thatisuday/ng-dropzone
-    $scope.dzOptions = {
-        url: URL_SERVICE + '/service/PostAccessories',
-        paramName: 'myfile',
-        autoProcessQueue: false,
-        maxFilesize: '10',
-        dictDefaultMessage: 'เลือกรูปสินค้าของคุณ สูงสุด 10 ไฟล์',
-        uploadMultiple: true, // Adding This 
-        acceptedFiles: 'image/jpeg, images/jpg, image/png',
-        addRemoveLinks: true
-    };
+    $scope.dzOptions = UPLOAD_CONFIG;
+    $scope.dzOptions.url = URL_SERVICE + '/service/PostAccessories';
+
     //Handle events for dropzone
     //Visit http://www.dropzonejs.com/#events for more events
     $scope.dzCallbacks = {
@@ -247,6 +240,9 @@ function SalesAccessoriesController(CrayfishService, $timeout, $log, $window, $s
             data.append("price", vm.accessories.price);
             data.append("type", vm.accessories.type);
             data.append("desc", vm.accessories.desc);
+        },
+        maxfilesexceeded: function (file) {
+            $scope.dzMethods.removeFile(file);
         }
     };
 
@@ -256,16 +252,13 @@ function SalesAccessoriesController(CrayfishService, $timeout, $log, $window, $s
     $scope.removeNewFile = function () {
         $scope.dzMethods.removeFile($scope.newFile); //We got $scope.newFile from 'addedfile' event callback
     }
-
-
     // ********************** dropzone ***************
     this.crayfishSubmit = function () {
         $scope.dzMethods.processQueue();
     }
 }
 
-function SalesCrayFishController(CrayfishService, URL_SERVICE, $timeout, $log, $window, $scope) {
-    Dropzone.autoDiscover = false;
+function SalesCrayFishController(CrayfishService, UPLOAD_CONFIG, URL_SERVICE, $timeout, $log, $window, $scope) {
     var vm = this;
     this.imageList = [];
     this.crayfish = {};
@@ -274,26 +267,21 @@ function SalesCrayFishController(CrayfishService, URL_SERVICE, $timeout, $log, $
 
     // ********************** dropzone ***************
     //https://github.com/thatisuday/ng-dropzone
-    $scope.dzOptions = {
-        url: URL_SERVICE + '/service/PostCrayfish',
-        paramName: 'myfile',
-        autoProcessQueue: false,
-        maxFilesize: '10',
-        dictDefaultMessage: 'เลือกรูปสินค้าของคุณ สูงสุด 10 ไฟล์',
-        uploadMultiple: true, // Adding This 
-        acceptedFiles: 'image/jpeg, images/jpg, image/png',
-        addRemoveLinks: true
-    };
+    $scope.dzOptions = UPLOAD_CONFIG;
+    $scope.dzOptions.url = URL_SERVICE + '/service/PostCrayfish';
+
     //Handle events for dropzone
     //Visit http://www.dropzonejs.com/#events for more events
     $scope.dzCallbacks = {
         'addedfile': function (file) {
-            console.log(file);
+            //console.log(file);
             $scope.newFile = file;
             vm.uploadSize++;
+            console.log('$scope.dzMethods ::==',$scope.dzMethods);
+            console.log('$scope.dzCallbacks ::==',$scope.dzCallbacks);
         },
         removedfile: function (file) {
-            vm.uploadSize--;
+                vm.uploadSize--;
         },
         'success': function (file, response) {
             var data = eval("(" + response + ')');
@@ -311,6 +299,9 @@ function SalesCrayFishController(CrayfishService, URL_SERVICE, $timeout, $log, $
             data.append("color", vm.crayfish.color);
             data.append("age", vm.crayfish.age);
             data.append("desc", vm.crayfish.desc);
+        },
+        maxfilesexceeded: function (file) {
+            $scope.dzMethods.removeFile(file);
         }
     };
 
@@ -320,8 +311,7 @@ function SalesCrayFishController(CrayfishService, URL_SERVICE, $timeout, $log, $
     $scope.removeNewFile = function () {
         $scope.dzMethods.removeFile($scope.newFile); //We got $scope.newFile from 'addedfile' event callback
     }
-
-
+    
     // ********************** dropzone ***************
     this.crayfishSubmit = function () {
         $scope.dzMethods.processQueue();
