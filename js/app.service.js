@@ -103,6 +103,15 @@ function CrayfishService($q, URL_SERVICE, $http) {
                 defer.reject(e);
             });
             return defer.promise;
+        },
+        getCriteriaFilter: function () {
+            var defer = $q.defer();
+            $http.get(URL_SERVICE + '/service/GetFilter', {}).then(function success(response) {
+                defer.resolve(response.data);
+            }, function error(e) {
+                defer.reject(e);
+            });
+            return defer.promise;
         }
     }
 }

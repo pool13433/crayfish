@@ -21,9 +21,21 @@ class SiteController extends Controller {
     }
 
     public function actionLogin() {
-
-        $this->render('/login', array(
-        ));
+        if (empty($_POST)) {
+            $this->render('/login');
+        } else {
+            $member = Member::model()->findByAttributes(array(
+                'mem_username' => $_POST['username'],
+                'mem_password' => md5($_POST['password'])
+            ));
+            if ($member) {
+                Yii::app()->SESSION['member'] = Member::getMemberProfile($member['mem_id']);
+                $this->redirect(array('site/index'));
+            } else {
+                Yii::app()->user->setFlash('error', "ไม่พบข้อมูลผู้เข้าใช้งานในระบบ");
+                $this->render('/login');
+            }
+        }
     }
 
     public function actionAccessories() {
@@ -49,29 +61,21 @@ class SiteController extends Controller {
                 'provinces' => $provinces
             ));
         } else {
-            $name = $_POST['name'];
-            $username = $_POST['username'];
-            $password = $_POST['password_0'];
-            $address = $_POST['address'];
-            $province = $_POST['province'];
-            $zipcode = $_POST['zipcode'];
-            $email = $_POST['email'];
-            $mobile = $_POST['mobile'];
             $member = new Member();
-            $member->mem_address = $address;
+            $member->mem_address = $_POST['address'];
             $member->mem_date_create = new CDbExpression('NOW()');
             $member->mem_date_update = new CDbExpression('NOW()');
-            $member->mem_email = $email;
-            $member->mem_fname = $name;
+            $member->mem_email = $_POST['email'];
+            $member->mem_fname = $_POST['name'];
             $member->mem_lname = 'xxxx';
-            $member->mem_username = $username;
-            $member->mem_password = $password;
-            $member->mem_mobile = $mobile;
+            $member->mem_username = $_POST['username'];
+            $member->mem_password = $_POST['password_0'];
+            $member->mem_mobile = $_POST['mobile'];
             $member->mem_status = 'active';
             $member->mem_privileg = 'customer';
             $member->mem_facebook = '';
-            $member->mem_zipcode = $zipcode;
-            $member->pro_id = $province;
+            $member->mem_zipcode = $_POST['zipcode'];
+            $member->pro_id = $_POST['province'];
             $member->lev_id = 1;
 
             $file = CUploadedFile::getInstanceByName('picture');
@@ -99,6 +103,66 @@ class SiteController extends Controller {
         }
     }
 
+    public function actionEditPassword() {
+        $session = Yii::app()->session['member'];
+        if (empty($_POST)) {
+            $this->render('/site/password_form', array(
+                'member' => $session
+            ));
+        } else {
+            $mem_id = $session['mem_id'];
+            $member = Member::model()->findByPk($mem_id);
+            $member->mem_password = $_POST['password_0'];
+            if ($member->save()) {
+                $member = Member::getMemberProfile($mem_id);
+                Yii::app()->session['member'] = $member;
+                $this->redirect(array('/site/profile'));
+            } else {
+                Yii::app()->user->setFlash('error', "ไม่สามารถแก้ไขรหัสผ่านได้ กรุณาติดต่อเจ้าหน้าที่ดูแลระบบ");
+                $this->render('/site/password_form', array(
+                    'member' => $session
+                ));
+            }
+        }
+    }
+
+    public function actionEditProfile() {
+        $provinces = Yii::app()->db->createCommand()
+                ->select('p.*')
+                ->from('province p')
+                ->order('p.pro_name asc')
+                ->queryAll();
+        if (empty($_POST)) {
+            $this->render('/site/profile_form', array(
+                'member' => Yii::app()->session['member'],
+                'provinces' => $provinces
+            ));
+        } else {
+            $session = Yii::app()->session['member'];
+            $mem_id = $session['mem_id'];
+
+            $member = Member::model()->findByPk($mem_id);
+            $member->mem_address = $_POST['address'];
+            $member->mem_date_update = new CDbExpression('NOW()');
+            $member->mem_email = $_POST['email'];
+            $member->mem_fname = $_POST['name'];
+            $member->mem_mobile = $_POST['mobile'];
+            $member->mem_zipcode = $_POST['zipcode'];
+            $member->pro_id = $_POST['province'];
+            if ($member->save()) {
+                $member = Member::getMemberProfile($mem_id);
+                Yii::app()->session['member'] = $member;
+                $this->redirect(array('/site/profile'));
+            } else {
+                Yii::app()->user->setFlash('error', "ไม่สามารถแก้ไขข้อมูลส่วนตัวได้ กรุณาติดต่อเจ้าหน้าที่ดูแลระบบ");
+                $this->render('/site/profile_form', array(
+                    'member' => Yii::app()->session['member'],
+                    'provinces' => $provinces
+                ));
+            }
+        }
+    }
+
     public function actionProfile() {
         $member = Yii::app()->SESSION['member'];
         $this->render('/site/profile', array(
@@ -121,7 +185,7 @@ class SiteController extends Controller {
         $this->render('/site/sales-accessories', array('type' => $type));
     }
 
-    public function actionDoCrayFish($id) {
+    public function actionCrayFishDetail($id) {
         $crayfish = Yii::app()->db->createCommand()
                 ->select('c.*,FORMAT(cray_price,0) as cray_price,
                         DATE_FORMAT(cray_date_create,\'%d-%m-%Y\') as cray_date_create,
@@ -143,8 +207,27 @@ class SiteController extends Controller {
         ));
     }
 
-    public function actionDoAccesories($id) {
-        
+    public function actionAccessoryDetail($id) {
+        $accessosy = Yii::app()->db->createCommand()
+                ->select('a.*')
+                ->from('accessories a')
+                ->where('a.acc_id =:id', array(':id' => $id))
+                ->queryRow();
+
+        $pictures = Yii::app()->db->createCommand()
+                ->select('p.*')
+                ->from('accessories_picture p')
+                ->where('p.acc_id =:accId', array(':accId' => $id))
+                ->queryAll();
+
+        $this->render('/site/accessories-detail', array(
+            'accessosy' => $accessosy,
+            'pictures' => $pictures
+        ));
+    }
+
+    public function actionFanpage() {
+        $this->render('/site/fanpage');
     }
 
 }

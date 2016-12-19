@@ -6,7 +6,7 @@
 // CWebApplication properties can be configured here.
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'CrayFish Online Thailand',
+    'name' => 'Love CrayFishs In Thailand',
     // preloading 'log' component
     'preload' => array('log'),
     // autoloading model and component classes

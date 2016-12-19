@@ -38,7 +38,13 @@ class ServiceController extends Controller {
         if (!empty($_POST['color']) && $_POST['color'] !== $this->default) {
             $command->andWhere('c.cray_color =:color', array(':color' => $_POST['color']));
         }
-        $command->order('c.cray_id DESC');
+        if (empty($_POST['filter'])) {
+            $command->order('c.cray_id DESC');
+        } else {
+            $filter = $_POST['filter'];
+            $command->order("c.cray_$filter");
+        }
+
         $crayfishs = $command->queryAll();
         echo CJSON::encode($crayfishs);
     }
@@ -61,7 +67,13 @@ class ServiceController extends Controller {
                 $command->andWhere('a.acc_price <=:end', array(':end' => $end));
             }
         }
-        $accessories = $command->order('a.acc_id DESC')->queryAll();
+        if (empty($_POST['filter'])) {
+            $command->order('a.acc_id DESC');
+        } else {
+            $filter = $_POST['filter'];
+            $command->order("a.acc_$filter");
+        }
+        $accessories = $command->queryAll();
         echo CJSON::encode($accessories);
     }
 
@@ -71,16 +83,7 @@ class ServiceController extends Controller {
                 ->from('accessories_type t')
                 ->queryAll();
         array_unshift($type, array('type_id' => '', 'type_name' => $this->default));
-        $price = array(
-            '' => $this->default,
-            '100-1500' => '100-1500 บาท',
-            '1501-3000' => '1501-3000 บาท',
-            '3001-4500' => '3001-4500 บาท',
-            '4501-6000' => '4501-6000 บาท',
-            '6001-7500' => '6001-7500 บาท',
-            '7501-9000' => '7501-9000 บาท',
-            '9000-0' => '9001 บาท ขึ้นไป',
-        );
+        $price = CriteriaData::prices();
 
         $filter = array(
             'type' => $type,
@@ -95,28 +98,8 @@ class ServiceController extends Controller {
                 ->from('crayfish c')
                 ->queryColumn();
         array_unshift($colors, $this->default);
-        $age = array(
-            '' => $this->default,
-            '0-6' => '0-6 เดือน',
-            '7-12' => '7-12 เดือน (1 ปี)',
-            '13-18' => '13-18 เดือน',
-            '19-24' => '19-24 เดือน (2 ปี)',
-            '25-30' => '25-30 เดือน',
-            '31-36' => '31-36 เดือน (3 ปี)',
-            '37-42' => '37-42 เดือน',
-            '43-0' => '43 เดือน ขึ้นไป',
-        );
-        $price = array(
-            '' => $this->default,
-            '100-1500' => '100-1500 บาท',
-            '1501-3000' => '1501-3000 บาท',
-            '3001-4500' => '3001-4500 บาท',
-            '4501-6000' => '4501-6000 บาท',
-            '6001-7500' => '6001-7500 บาท',
-            '7501-9000' => '7501-9000 บาท',
-            '9001-10500' => '9001-10500 บาท',
-            '10501-0' => '10501 บาท ขึ้นไป'
-        );
+        $age = CriteriaData::ages();
+        $price = CriteriaData::prices();
         $filter = array(
             'ages' => $age,
             'colors' => $colors,
@@ -259,13 +242,14 @@ class ServiceController extends Controller {
             $lname = $_POST['last_name'];
             $email = $_POST['email'];
             $gender = $_POST['gender'];
+            $picture = $_POST['picture'];
             $member = Yii::app()->db->createCommand()
                     ->select('m.*
                             ,(SELECT lev_name FROM member_level ml WHERE ml.lev_id = m.lev_id) as lev_name
                             ,DATE_FORMAT(mem_date_create,\'%d-%m-%Y\') as mem_date_create,DATE_FORMAT(mem_date_update,\'%d-%m-%Y\') as mem_date_update')
                     ->from('member m')
                     ->where('m.mem_facebook =:facebookId', array(':facebookId' => $facebookId))
-                    ->queryRow();                  
+                    ->queryRow();
             if (!$member) { // New User
                 $member = new Member();
                 $member->mem_date_create = new CDbExpression('NOW()');
@@ -277,7 +261,7 @@ class ServiceController extends Controller {
                 $member->mem_lname = $lname;
                 $member->mem_privileg = "customer";
                 $member->mem_status = "active";
-                $member->mem_picture = '';
+                $member->mem_picture = $picture;
                 $member->pro_id = 1;
                 if (!$member->save()) {
                     $response = array('status' => false, 'message' => 'เกิดข้อผิดพลาด กรุณาติดต่อ ผู้ดูแลระบบ');
@@ -285,12 +269,19 @@ class ServiceController extends Controller {
                     exit();
                 }
             }
-            Yii::app()->session['member'] = $member;
+            Yii::app()->session['member'] = Member::getMemberProfile($member['mem_id']);
             $response = array('status' => true, 'message' => 'เข้าระบบสำเร็จ', 'redirect' => Yii::app()->createUrl('/site/index'));
             echo CJSON::encode($response);
         } else {
             echo CJSON::encode(array('status' => false, 'message' => 'method not allows !!'));
         }
+    }
+
+    public function actionGetFilter() {
+        echo CJSON::encode(array(
+            'crayfish' => CriteriaData::crayFishFilters(),
+            'accessory' => CriteriaData::accessoryFilters()
+        ));
     }
 
 }

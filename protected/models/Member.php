@@ -60,6 +60,7 @@ class Member extends CActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
+            'province' => array(self::BELONGS_TO, 'Province', 'pro_id'),
         );
     }
 
@@ -68,23 +69,23 @@ class Member extends CActiveRecord {
      */
     public function attributeLabels() {
         return array(
-            'mem_id' => 'Mem',
-            'mem_facebook' => 'Mem Facebook',
-            'mem_fname' => 'Mem Fname',
-            'mem_lname' => 'Mem Lname',
-            'mem_username' => 'Mem Username',
-            'mem_password' => 'Mem Password',
-            'mem_address' => 'Mem Address',
-            'pro_id' => 'Pro',
-            'mem_zipcode' => 'Mem Zipcode',
-            'mem_mobile' => 'Mem Mobile',
-            'mem_email' => 'Mem Email',
-            'mem_picture' => 'Mem Picture',
-            'mem_date_create' => 'Mem Date Create',
-            'mem_date_update' => 'Mem Date Update',
-            'mem_status' => 'Mem Status',
-            'mem_privileg' => 'Mem Privileg',
-            'lev_id' => 'Lev',
+            'mem_id' => 'รหัส',
+            'mem_facebook' => 'Facebook',
+            'mem_fname' => 'ชื่อ',
+            'mem_lname' => 'สกุล',
+            'mem_username' => 'Username',
+            'mem_password' => 'Password',
+            'mem_address' => 'Address',
+            'pro_id' => 'จังหวัด',
+            'mem_zipcode' => 'zipcode',
+            'mem_mobile' => 'mobile',
+            'mem_email' => 'email',
+            'mem_picture' => 'picture',
+            'mem_date_create' => 'Date Create',
+            'mem_date_update' => 'Date Update',
+            'mem_status' => 'status',
+            'mem_privileg' => 'privileg',
+            'lev_id' => 'level',
         );
     }
 
@@ -136,6 +137,21 @@ class Member extends CActiveRecord {
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
+    }
+
+    public function beforeSave() {
+        $this->mem_password = md5($this->mem_password);
+        return true;
+    }
+
+    public static function getMemberProfile($mem_id) {
+        return Yii::app()->db->createCommand()
+                        ->select('m.*
+                            ,(SELECT lev_name FROM member_level ml WHERE ml.lev_id = m.lev_id) as lev_name
+                            ,DATE_FORMAT(mem_date_create,\'%d-%m-%Y\') as mem_date_create,DATE_FORMAT(mem_date_update,\'%d-%m-%Y\') as mem_date_update')
+                        ->from('member m')
+                        ->where('m.mem_id =:mem_id', array(':mem_id' => $mem_id))
+                        ->queryRow();
     }
 
 }

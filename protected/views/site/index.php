@@ -7,7 +7,7 @@
         <div class="ui five cards stackable">
             <?php foreach ($crayfishs as $index => $cray) { ?>
                 <div class="ui card">
-                    <a class="image" href="<?=$baseUrl?>/site/doCrayFish/<?=$cray['cray_id']?>">
+                    <a class="image" href="<?=$baseUrl?>/site/CrayFishDetail/<?=$cray['cray_id']?>">
                         <div class="ui red ribbon label">
                             <i class="hotel icon"></i> Hotel
                         </div>

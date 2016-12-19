@@ -36,7 +36,8 @@ class Controller extends CController {
             $cs->registerCssFile($baseUrl . '/plugins/owl-carousel-1.3.3/owl.transitions.min.css');         
             $cs->registerCssFile($baseUrl . '/node_modules/dropzone/dist/dropzone.css');            
             $cs->registerCssFile($baseUrl . '/node_modules/ngdropzone/dist/ng-dropzone.min.css');                        
-
+            $cs->registerCssFile($baseUrl . '/node_modules/easyzoom-mp/css/easyzoom.css');     
+            
             $cs->registerScriptFile($baseUrl . '/node_modules/jquery/dist/jquery.min.js', CClientScript::POS_END);            
             $cs->registerScriptFile($baseUrl . '/node_modules/angular/angular.min.js', CClientScript::POS_END);            
             $cs->registerScriptFile($baseUrl . '/plugins/semantic-ui-css/semantic.min.js', CClientScript::POS_END);
@@ -45,7 +46,8 @@ class Controller extends CController {
             $cs->registerScriptFile($baseUrl . '/node_modules/lodash/lodash.min.js', CClientScript::POS_END);
             $cs->registerScriptFile($baseUrl . '/node_modules/ng-facebook/ngFacebook.js', CClientScript::POS_END);
             $cs->registerScriptFile($baseUrl . '/node_modules/dropzone/dist/dropzone.js', CClientScript::POS_END);
-            $cs->registerScriptFile($baseUrl . '/node_modules/ngdropzone/dist/ng-dropzone.min.js', CClientScript::POS_END);                         
+            $cs->registerScriptFile($baseUrl . '/node_modules/ngdropzone/dist/ng-dropzone.min.js', CClientScript::POS_END);     
+            $cs->registerScriptFile($baseUrl . '/node_modules/easyzoom-mp/dist/easyzoom.js', CClientScript::POS_END);     
             $cs->registerScriptFile('https://maps.googleapis.com/maps/api/js?key='.Yii::app()->params['API_KEY'], CClientScript::POS_END);            
             
             $cs->registerScriptFile($baseUrl . '/js/app.js', CClientScript::POS_END);

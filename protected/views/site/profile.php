@@ -4,7 +4,11 @@
         <div class="ui grid">
             <div class="six wide column">
                 <div class="ui fluid image">
-                    <img src="<?= $baseUrl ?>/uploads/profile/<?= $member['mem_picture'] ?>">
+                    <?php if (empty($member['mem_facebook'])) { ?>
+                        <img src="<?= $baseUrl ?>/uploads/profile/<?= $member['mem_picture'] ?>">
+                    <?php } else { ?> 
+                        <img src="http://graph.facebook.com/<?= $member['mem_facebook'] ?>/picture?type=large">
+                    <?php } ?>
                 </div>
             </div>
             <div class="ten wide column">
@@ -44,7 +48,7 @@
                             </div>                        
                         </div>                   
                     </div>      
-                    <button class="ui button green">แก้ไขข้อมูล</button>
+                    <a class="ui button green" href="<?= Yii::app()->createUrl('/site/EditProfile') ?>">แก้ไขข้อมูล</a>
                     <a href="<?= Yii::app()->createUrl('/site/index') ?>" class="ui button orange">กลับไปหน้าแรก</a>
                 </form>
 

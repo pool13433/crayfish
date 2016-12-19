@@ -1,4 +1,4 @@
-<?php $baseUrl = Yii::app()->baseUrl; ?>
+<?php $baseUrl = Yii::app()->baseUrl; ?>    
 <div class="ui vertical segment" ng-controller="CrayfishsController as vm">   
     <div class="ui container">        
         <div class="ui column grid stackable">
@@ -8,7 +8,8 @@
                     <div class="item">
                         <a class="title">
                             <i class="dropdown icon"></i>
-                            ค้นหาด้วย อายุกุ้ง
+                            ค้นหาด้วย อายุกุ้ง 
+                            <span class="ui blue basic label">{{vm.findCriteriaName().ageName(vm.age)}}</span>
                         </a>
                         <div class="content">
                             <div class="ui form">
@@ -29,6 +30,7 @@
                         <a class="title">
                             <i class="dropdown icon"></i>
                             ค้นหาด้วย ช่วงราคา
+                            <span class="ui blue basic label">{{vm.findCriteriaName().priceName(vm.price)}}</span>
                         </a>
                         <div class="content">
                             <div class="ui form">
@@ -49,6 +51,7 @@
                         <a class="title">
                             <i class="dropdown icon"></i>
                             ค้นหาด้วย สีกุ้ง
+                            <span class="ui blue basic label">{{vm.findCriteriaName().colorName(vm.color)}}</span>
                         </a>
                         <div class="content">
                             <div class="ui form">
@@ -67,30 +70,48 @@
                 </div>
             </div>
             <div class="thirteen wide column">
-                <h2 class="ui dividing header">
-                    Crayfish
-                </h2>
-                <div class="ui four cards stackable" >           
-
-                    <div class="ui card" ng-repeat="crayfish in vm.crayfishList" ng-cloak>
-                        <a class="image" href="<?= $baseUrl ?>/site/doCrayFish/{{crayfish.cray_id}}">
-                            <img src="<?= $baseUrl ?>/uploads/crayfishs/{{crayfish.cray_picture}}">
-                        </a>
-                        <div class="content">
-                            <a class="header" href="#">{{crayfish.cray_name}}</a>
-                        </div>
-                        <div class="extra content">
-                            <span class="left floated like">
-                                <i class="money icon"></i>
-                                {{crayfish.cray_price}}
-                            </span>
-                            <span class="right floated star">
-                                <i class="calendar icon"></i>
-                                {{crayfish.cray_date_create}}
-                            </span>
+                <div class="ui clearing segment top attached">
+                    <div class="ui left floated">
+                        <h2>Crayfish</h2>
+                    </div>
+                    <div class="ui right floated">
+                        <div class="ui floating labeled icon dropdown button basic blue" id="ddFilter">
+                            <i class="filter icon"></i>
+                            <span class="text">เรียงข้อมูล</span>
+                            <div class="menu">
+                                <div class="header">
+                                    <i class="tags icon"></i>
+                                    จัดเรียงข้อมูลด้วย
+                                </div>
+                                <div class="item" ng-repeat="(key,value) in vm.filterCrayfishList" 
+                                     data-value="{{key}}" data-text="{{value}}">
+                                    {{value}}
+                                </div>
+                            </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui four cards stackable" >           
+                        <div class="ui card" ng-repeat="crayfish in vm.crayfishList" ng-cloak>
+                            <a class="image" href="<?= $baseUrl ?>/site/CrayFishDetail/{{crayfish.cray_id}}" target="_blank">
+                                <img src="<?= $baseUrl ?>/uploads/crayfishs/{{crayfish.cray_picture}}">
+                            </a>
+                            <div class="content">
+                                <a class="header" href="#">{{crayfish.cray_name}}</a>
+                            </div>
+                            <div class="extra content">
+                                <span class="left floated like">
+                                    <i class="money icon"></i>
+                                    {{crayfish.cray_price}}
+                                </span>
+                                <span class="right floated star">
+                                    <i class="calendar icon"></i>
+                                    {{crayfish.cray_date_create}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

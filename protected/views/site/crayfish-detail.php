@@ -1,6 +1,6 @@
 <?php $baseUrl = Yii::app()->baseUrl; ?>
-<?php $crayfishUrl = Yii::app()->getRequest()->getHostInfo() . $baseUrl . '/site/doCrayFish/' . $crayfish['cray_id']; ?>
-<div class="ui container" ng-controller="DoCrayfishController as vm">        
+<?php $crayfishUrl = Yii::app()->getRequest()->getHostInfo() . $baseUrl . '/site/CrayFishDetail/' . $crayfish['cray_id']; ?>
+<div class="ui container" ng-controller="CrayFishDetailController as vm">        
     <div id="fb-root"></div>
     <h3 class="ui top attached header">
         <?= $crayfish['cray_name'] ?>
@@ -8,14 +8,20 @@
     </h3>
     <div class="ui attached segment">
         <div class="ui grid">
-            <div class="five wide column">
-                <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="seven wide column">
+                <div class="owl-demo">
                     <?php foreach ($pictures as $index => $picture) { ?>
-                        <div class="item"><img class="ui image bordered" src="<?= $baseUrl ?>/uploads/crayfishs/<?=$picture['pic_name']?>"></div>
+                        <div>
+                            <div class="easyzoom easyzoom--overlay">
+                                <a href="<?= $baseUrl ?>/uploads/crayfishs/<?= $picture['pic_name'] ?>">
+                                    <img src="<?= $baseUrl ?>/uploads/crayfishs/<?= $picture['pic_name'] ?>" alt="" class="normal ui image bordered"/>
+                                </a>
+                            </div>
+                        </div>
                     <?php } ?>
                 </div>
             </div>
-            <div class="eleven wide column">
+            <div class="nine wide column">
                 <h3 class="ui top attached header">
                     <?= $crayfish['cray_name'] ?>
                 </h3>

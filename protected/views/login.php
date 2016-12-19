@@ -1,19 +1,28 @@
-<div class="ui container" style="margin-top: 100px;" ng-controller="SignInController as vm">
-    <div class="ui two column centered grid">
+<div class="ui container" style="margin-top: 30px;">
+    <div class="ui two column centered grid" ng-controller="SignInController as vm">
         <div class="column">
             <div class="ui basic segment">
-                <div class="ui form piled segment">
+                <?php if (Yii::app()->user->hasFlash('error')) { ?>
+                    <div class="ui warning message">
+                        <i class="close icon"></i>
+                        <div class="header">
+                            <?php echo Yii::app()->user->getFlash('error'); ?>
+                        </div>                        
+                    </div>
+                <?php } ?>
+                <form class="ui form piled segment" method="post" action="<?= Yii::app()->createUrl('site/Login') ?>" name="signin">
+                    <div class="ui error message"></div>
                     <div class="field">
                         <label>Username</label>
                         <div class="ui left icon input">
-                            <input placeholder="Username" type="text">
+                            <input placeholder="Username" type="text" name="username">
                             <i class="user icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>Password</label>
                         <div class="ui left icon input">
-                            <input type="password">
+                            <input type="password" name="password">
                             <i class="lock icon"></i>
                         </div>
                     </div>
@@ -22,12 +31,12 @@
                             <i class="sign in icon"></i>
                             Login
                         </button>
-                        <button class="ui labeled icon button submit blue">
-                            <i class="home icon"></i>
-                            Home
+                        <button type="reset" class="ui labeled icon button orange">
+                            <i class="erase icon"></i>
+                            Clear
                         </button>
                     </div>
-                </div>
+                </form>
                 <div class="ui horizontal divider">
                     Or
                 </div>

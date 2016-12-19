@@ -7,6 +7,17 @@ and open the template in the editor.
     Created on : Dec 6, 2016, 10:27:58 PM
     Author     : PoolLaptop
 */
+
+div [class*="left floated"] {
+    float: left;
+    margin-left: 0.25em;
+}
+
+div [class*="right floated"] {
+    float: right;
+    margin-right: 0.25em;
+} 
+
 @media screen and (max-width: 799px) and (min-width: 320px) {
     .mobile{
         visibility: visible;
@@ -30,3 +41,8 @@ and open the template in the editor.
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
 }
+/*.ui.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}*/

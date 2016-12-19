@@ -7,7 +7,8 @@
                     <div class="item">
                         <a class="title">
                             <i class="dropdown icon"></i>
-                            ค้นหาด้วย ประเภทอุปกรณ์
+                            ค้นหาด้วย ประเภทอุปกรณ์ 
+                            <span class="ui blue basic label">{{vm.findCriteriaName().typeName(vm.type)}}</span>
                         </a>
                         <div class="content">
                             <div class="ui form">
@@ -26,7 +27,8 @@
                     <div class="item">
                         <a class="title">
                             <i class="dropdown icon"></i>
-                            ค้นหาด้วย ช่วงราคา
+                            ค้นหาด้วย ช่วงราคา 
+                            <span class="ui blue basic label">{{vm.findCriteriaName().priceName(vm.price)}}</span>
                         </a>
                         <div class="content">
                             <div class="ui form">
@@ -45,30 +47,50 @@
                 </div>
             </div>
             <div class="thirteen wide column">
-                <h2 class="ui dividing header">
-                    อุปกรณ์
-                </h2>
-                <div class="ui four cards stackable">           
-
-                    <div class="ui card" ng-repeat="accesory in vm.accessoryList" ng-cloak>
-                        <a class="image" href="<?= $baseUrl ?>/site/doAccesories/{{accesory.acc_id}}">
-                            <img src="<?= $baseUrl ?>/uploads/accessory/{{accesory.acc_picture}}">
-                        </a>
-                        <div class="content">
-                            <a class="header" href="#">{{accesory.acc_name}}</a>
-                        </div>
-                        <div class="extra content">
-                            <span class="left floated like">
-                                <i class="money icon"></i>
-                                {{accesory.acc_price}}
-                            </span>
-                            <span class="right floated star">
-                                <i class="calendar icon"></i>
-                                {{accesory.acc_date_create}}
-                            </span>
+                <div class="ui clearing segment top attached">
+                    <div class="ui left floated">
+                        <h2>อุปกรณ์เลี้ยงกุ้ง</h2>
+                    </div>
+                    <div class="ui right floated">
+                        <div class="ui floating labeled icon dropdown button basic blue" id="ddFilter">
+                            <i class="filter icon"></i>
+                            <span class="text">เรียงข้อมูล</span>
+                            <div class="menu">
+                                <div class="header">
+                                    <i class="tags icon"></i>
+                                    จัดเรียงข้อมูลด้วย
+                                </div>
+                                <div class="item" ng-repeat="(key,value) in vm.filterCrayfishList" 
+                                     data-value="{{key}}" data-text="{{value}}">
+                                    {{value}}
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui four cards stackable">           
 
+                        <div class="ui card" ng-repeat="accesory in vm.accessoryList" ng-cloak>
+                            <a class="image" href="<?= $baseUrl ?>/site/AccessoryDetail/{{accesory.acc_id}}" target="_blank">
+                                <img src="<?= $baseUrl ?>/uploads/accessory/{{accesory.acc_picture}}">
+                            </a>
+                            <div class="content">
+                                <a class="header" href="#">{{accesory.acc_name}}</a>
+                            </div>
+                            <div class="extra content">
+                                <span class="left floated like">
+                                    <i class="money icon"></i>
+                                    {{accesory.acc_price}}
+                                </span>
+                                <span class="right floated star">
+                                    <i class="calendar icon"></i>
+                                    {{accesory.acc_date_create}}
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
